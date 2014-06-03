@@ -6,6 +6,8 @@
   <script type="text/javascript" src="javascripts/jquery.js"></script>
   <script type="text/javascript" src="javascripts/underscore.js"></script>
   <script type="text/javascript" src="javascripts/backbone.js"></script>
+  <script type="text/javascript" src="javascripts/hobbiesView.js"></script>
+
   <script type="text/javascript" src="javascripts/main.js"></script>
 
 
@@ -13,7 +15,62 @@
 </head>
 <body>
 
-<h1>Here is some text code on the index page</h1>
+<div id='welcome'>
+  <img id="img1" src="http://i.imgur.com/EhOHG78.png" alt="Joshua's photo" title="Joshua Aaron Guthals sits by a well" width="364" height="364">
+    <h1>Joshua Aaron Guthals</h1>
+    <h2><a href="mailto:joshua.guthals@gmail.com" style="text-decoration: none">joshua.guthals@gmail.com</a></br>
+      (510) 220-4981</h2>
+</div>
+
+<div id='main-nav'>
+      <h3><ul>
+    <li class="portfolio" style="text-decoration: none"><a href="#portfolio">portfolio</a></li>
+     <li class="family" style="text-decoration: none"><a href="#family">family</a></li>
+      <li class="hobbies" style="text-decoration: none"><a href="#hobbies">hobbies</a></li>
+      <li class="favourite-things" style="text-decoration: none"><a href="#favouriteThings">favourite things</a></li>
+      <li class="resume" style="text-decoration: none"><a href="Joshua Guthals Resume.pdf" target="_blank" style="text-decoration: none">resume</a></li>
+    </ul></h3>
+</div>
+
+<div id="main-profile">
+
+</div>
+
+
+<script id="viewHobbies" type="text/template">
+    <div id="hobbies">
+    <hr>
+    </br>
+
+    <h2 id="Family"><u>My current exciting hobby</u></h2>
+    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. My current passion, however, seems to be Instagram photography. You can visit my page <a href="http://instagram.com/jagnyc227" target="_blank">here</a> and you can also check out a sampling of my NYC photos by scrolling down the page below. (NOTE: To view a full-size version, just click on each photo.)</br></br><hr>
+<a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" height=354 width=354 title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
+<p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
+<a href="http://i.imgur.com/LdDiwvH.png" target="_blank"><img src="http://i.imgur.com/LdDiwvH.png" height=354 width=354 title="One Flight Down" alt="One Flight Down" style="border: none;"></a>
+<p id="p2">A bugle rests in a trashcan. Something awaits one flight down.</p>
+<a href="http://i.imgur.com/0odpUrh.png" target="_blank"><img src="http://i.imgur.com/0odpUrh.png" height=354 width=354 title="Fabled" alt="Fabled" style="border: none;"></a>
+<p id="p2">Rich hues of midtown high-rises, storied and fabled.</p>
+<a href="http://i.imgur.com/1Z06CZI.png" target="_blank"><img src="http://i.imgur.com/1Z06CZI.png" height=354 width=354 title="Collapse" alt="Collapse" style="border: none;"></a>
+<p id="p2">A person rests in the corner of the 14th Street subway station</p>
+<a href="http://i.imgur.com/HjxcLPx.png" target="_blank"><img src="http://i.imgur.com/HjxcLPx.png" height=354 width=354 title="Metal Gloss" alt="Metal Gloss" style="border: none;"></a>
+<p id="p2">Workers pile stacks of glossy metal before the build</p>
+<a href="http://i.imgur.com/xrotSYo.png" target="_blank"><img src="http://i.imgur.com/xrotSYo.png" height=354 width=354 title="Hot Pink" alt="Hot Pink" style="border: none;"></a>
+<p id="p2">A line of hot pink paint follows the construction in Clinton Hill</p>
+<a href="http://i.imgur.com/NE48gYy.png" target="_blank"><img src="http://i.imgur.com/NE48gYy.png" height=354 width=354 title="Clouds First" alt="Clouds First" style="border: none;"></a>
+<p id="p2">A view of the city soaked in rain from the Empire State Building</p>
+<a href="http://i.imgur.com/n01YfzX.png" target="_blank"><img src="http://i.imgur.com/n01YfzX.png" height=354 width=354 title="Cans" alt="Cans" style="border: none;"></a>
+<p id="p2">A woman stumbles down the sidewalk near Union Square, gathering recylables</p>
+<a href="http://i.imgur.com/XLp9yBN.png" target="_blank"><img src="http://i.imgur.com/XLp9yBN.png" height=354 width=354 title="Black Bird" alt="Black Bird" style="border: none;"></a>
+<p id="p2">A bird arcs near Penn Station</p>
+</p>
+</br></br>
+
+    <button><a href="#hobbies">Back To Top</a></button><button><a href="#favouriteThings">Onward to Favourite Things!</a></button></br></br>
+
+    <hr>
+    </div>
+</script>
+
 
 </body>
 </html>
