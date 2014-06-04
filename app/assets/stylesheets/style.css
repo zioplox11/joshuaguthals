@@ -1,25 +1,3 @@
-@font-face
-{
-font-family: gotham_rounded;
-src: url(../fonts/Gotham_rounded/GothamRnd-Light.otf);
-}
-
-
-@font-face
-{
-font-family: gotham_light;
-src: url(../fonts/Gotham/Gotham-Light.otf);
-}
-
-
-
-html, body {
-  max-width: 564px;
-  margin: 0 auto;
-  font-family: gotham_light;
-  text-align: center;
-  color: rgba(210,60,90,.8);
-}
 
 #welcome {
   margin: 0 auto;
@@ -28,36 +6,32 @@ html, body {
   text-transform: uppercase;
   font-size: 13px;
   top: 10px;
-  height: 580px;
-  width: 550px;
-/*  border: 1px solid red;*/
+  height: 490px;
+  width: 500px;
+  border: 1px solid red;
 }
 
 #main-nav{
   position: relative;
   display: block;
   height: 50px;
-  width: 550px;
-  margin: 0 auto;
-/*  border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 #main-profile{
   position: relative;
   display: block;
   height: 80px;
-  width: 550px;
-  margin: 0 auto;
-/*  border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 img {
 margin: 10px 0px 0px 0px;
 border-style:solid;
-border-radius: 6px;
+border-radius: 10px;
 border: 5px rgba(210,170,90,.8);
-height: 400px;
-width: 400px;
+height: 550px;
+width: 550px;
 }
 
 img:hover
@@ -68,17 +42,14 @@ filter:alpha(opacity=55); /* For IE8 and earlier */
 
 #img1:hover
 {
-
 opacity:1;
 filter:alpha(opacity=1); /* For IE8 and earlier */
 }
 
 article, #hobbies {
-max-width: 500px;
+max-width: 364px;
 padding: 0px;
 margin: 0 auto;
-position: relative;
-text-align: center;
 }
 
 a:-webkit-any-link {
@@ -108,20 +79,6 @@ h2 {
   margin: 0px;
 }
 
-#email{
-  font-size: 15px;
-}
-
-h5 {
-  color: grey;
-  font-weight: normal;
-  text-transform: none;
-  font-size: 14px;
-  padding: 0px 0px 0px 0px;
-  margin: 0 auto;
-
-}
-
 h3 {
   color: grey;
   text-transform: none;
@@ -133,17 +90,19 @@ h3 {
 
 p {
   font-size: 14px;
+  font-family: "helvetica";
+  text-align: justify;
   color: grey;
-  text-align: left;
   margin-right: 5px;
   margin-left: 5px;
   margin-top: 24px;
   font-weight: normal;
-}
 
+}
 
 #p2 {
   font-size: 12px;
+  font-family: "helvetica";
   text-align: left;
   margin-left:10px;
   margin-bottom: 20px;
@@ -151,18 +110,9 @@ p {
   font-weight: normal;
 }
 
-#pOpener {
-  color: grey;
-  font-size: 14px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 0px;
-  font-weight: normal;
-}
-
 ul {
-max-width: 364px;
-margin: 0px auto;
+  max-width: 364px;
+  margin: 0px auto;
 padding: 10px 0px 0px 0px;
 
 }
