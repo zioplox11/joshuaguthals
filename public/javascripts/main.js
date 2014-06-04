@@ -35,7 +35,11 @@ var AppRouter = Backbone.Router.extend({
   },
 
   myFavouriteThings: function() {
-
+    console.log("hello");
+    router.prepareNewView();
+    $('.favourite-things').css('text-decoration', 'underline');
+    $('.hobbies').css('font-size', '1.2em');
+    hobbiesView.renderHobbiesView();
   }
 
 });
