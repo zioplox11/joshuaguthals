@@ -28,7 +28,7 @@ html, body {
   text-transform: uppercase;
   font-size: 13px;
   top: 10px;
-  height: 580px;
+  height: 564px;
   width: 550px;
 /*  border: 1px solid red;*/
 }
@@ -156,7 +156,8 @@ p {
   font-size: 14px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: -8px;
+  margin-bottom: -8px;
   font-weight: normal;
 }
 
