@@ -28,7 +28,7 @@ html, body {
   text-transform: uppercase;
   font-size: 13px;
   top: 10px;
-  height: 564px;
+  height: 550px;
   width: 550px;
 /*  border: 1px solid red;*/
 }
@@ -66,8 +66,14 @@ opacity:0.55;
 filter:alpha(opacity=55); /* For IE8 and earlier */
 }
 
+#hOpener{
+  margin-top: 12px;
+}
+
+
 #img1:hover
 {
+
 
 opacity:1;
 filter:alpha(opacity=1); /* For IE8 and earlier */
