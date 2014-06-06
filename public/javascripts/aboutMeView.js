@@ -14,8 +14,10 @@ var AboutMeView = Backbone.View.extend({
   renderAboutMeView: function(){
     var strangeTemplateGlitch =  _.template($("#viewAboutMe").html());
     this.$el.empty();
+    this.$el.hide();
     console.log('empty');
     this.$el.html(strangeTemplateGlitch(this.model.toJSON()));
+    this.$el.show();
   },
 
 });
