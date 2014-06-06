@@ -14,7 +14,7 @@ src: url(../fonts/Gotham/Gotham-Light.otf);
 
 
 html, body {
-  max-width: 564px;
+  max-width: 496px;
   margin: 0 auto;
   font-family: gotham_light;
   text-align: center;
@@ -28,16 +28,23 @@ html, body {
   text-transform: uppercase;
   font-size: 13px;
   top: 10px;
-  height: 550px;
-  width: 550px;
+  height: 610px;
+  width: 496px;
 /*  border: 1px solid red;*/
+}
+
+.nav-list li{
+  position: relative;
+  margin-left: 6px;
+  left: -3px;
+
 }
 
 #main-nav{
   position: relative;
   display: block;
-  height: 50px;
-  width: 550px;
+  height: 40px;
+  width: 496px;
   margin: 0 auto;
 /*  border: 1px solid blue;*/
 }
@@ -46,7 +53,7 @@ html, body {
   position: relative;
   display: block;
   height: 80px;
-  width: 550px;
+  width: 496px;
   margin: 0 auto;
 /*  border: 1px solid blue;*/
 }
@@ -56,8 +63,8 @@ margin: 10px 0px 0px 0px;
 border-style:solid;
 border-radius: 6px;
 border: 5px rgba(210,170,90,.8);
-height: 400px;
-width: 400px;
+height: 470px;
+width: 470px;
 }
 
 img:hover
@@ -80,8 +87,8 @@ filter:alpha(opacity=1); /* For IE8 and earlier */
 }
 
 article, #hobbies {
-max-width: 500px;
-padding: 0px;
+max-width: 496px;
+padding: 10px;
 margin: 0 auto;
 position: relative;
 text-align: center;
@@ -157,21 +164,22 @@ p {
   font-weight: normal;
 }
 
+
 #pOpener {
   color: grey;
   font-size: 14px;
   text-align: center;
   margin: 0 auto;
-  margin-top: -8px;
+  margin-top: -2px;
   margin-bottom: -8px;
   font-weight: normal;
 }
 
 ul {
-max-width: 364px;
+max-width: 496px;
 margin: 0px auto;
-padding: 10px 0px 0px 0px;
-
+padding: 14px 0px 0px 0px;
+margin-left: 4px;
 }
 
 li {
@@ -180,9 +188,10 @@ text-transform: none;
 text-decoration: none;
 display:inline-block;
 padding: 0px 4px 0px 4px;
+margin-right: 6px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 496px) {
 h1 {
 font-size: 30px;
 padding: 5px;
