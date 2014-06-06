@@ -8,6 +8,8 @@
   <script type="text/javascript" src="javascripts/underscore.js"></script>
   <script type="text/javascript" src="javascripts/backbone.js"></script>
   <script type="text/javascript" src="javascripts/hobbiesView.js"></script>
+  <script type="text/javascript" src="javascripts/aboutMeView.js"></script>
+  <script type="text/javascript" src="javascripts/favouriteThingsView.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
 
 
@@ -27,7 +29,7 @@
 <div id='main-nav'>
       <h3><ul class='nav-list'>
     <li class="portfolio" style="text-decoration: none"><a href="#portfolio">portfolio</a></li>
-     <li class="family" style="text-decoration: none"><a href="#family">family</a></li>
+     <li class="about-me" style="text-decoration: none"><a href="#aboutMe">about me</a></li>
       <li class="hobbies" style="text-decoration: none"><a href="#hobbies">hobbies</a></li>
       <li class="favourite-things" style="text-decoration: none"><a href="#favouriteThings">favourite things</a></li>
       <li class="resume" style="text-decoration: none"><a href="Joshua Guthals Resume.pdf" target="_blank" style="text-decoration: none">resume</a></li>
@@ -40,12 +42,12 @@
 
 
 <script id="viewHobbies" type="text/template">
-    <div id="hobbies">
-<hr width='462px'>
-    </br>
+  <div id="hobbies">
+  <hr width='462px'>
+  </br>
 
-    <h2 id="Family"><u>My current exciting hobby</u></h2>
-    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. </p><p>My current passion, however, seems to be Instagram photography. You can visit my page <a href="http://instagram.com/jagnyc227" target="_blank">here</a> and you can also check out a sampling of my NYC photos by scrolling down the page below. (NOTE: To view a full-size version, just click on each photo.)</br></br>
+    <h2 id="hobby"><u>My current exciting hobby</u></h2>
+    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. </p><p>My current passion, however, seems to be Instagram photography. You can visit my page <a href="http://instagram.com/jagnyc227" target="_blank">here</a> and you can also check out a sampling of my NYC photos by scrolling down the page below. (NOTE: To view a full-size version, just click on each photo.)</p></br></br>
 <hr width='462px'>
 <a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
 <p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
@@ -65,10 +67,12 @@
 <p id="p2">A woman stumbles down the sidewalk near Union Square, gathering recylables</p>
 <a href="http://i.imgur.com/XLp9yBN.png" target="_blank"><img src="http://i.imgur.com/XLp9yBN.png" title="Black Bird" alt="Black Bird" style="border: none;"></a>
 <p id="p2">A bird arcs near Penn Station</p>
-</p>
 </br></br>
 
-    <button><a href="#hobbies">Back To Top</a></button><button><a href="#favouriteThings">Onward to Favourite Things!</a></button></br></br>
+    <button><a href="#hobbies">Back To Top</a></button>
+    <button><a href="#favouriteThings">Onward to Favourite Things!</a></button>
+    <button><a href="index">Back to Main Page!</a></button>
+    </br></br>
 
 <hr width='462px'>
     </div>
@@ -76,13 +80,53 @@
 
 
 
-<script id="viewFavouriteThings">
+<script id="viewFavouriteThings" type='text/template'>
   <div id="favourite-things">
+  <hr width='462px'>
+  </br>
+
+    <h2 id="favouriteThings"><u>These are a few of my favourite things</u></h2>
+    <p>Ok, so first of all, no I'm not British. But why not add a "u" to "favorite" just to kick everything up a notch. This page is devoted to things past, present, and future that have caught my attention. Just click on each photo for more information. I will update this from time to time when new things strike my interest.</br></br><hr>
+<a href="http://www.coldspringapothecary.com" target="_blank"><img src="http://i.imgur.com/1vrW74y.png" height=354 width=354 title="Cold Spring Apothecary" alt="Cold Spring Apothecary" style="border: none;"></a>
+<p id="p2">This little shop in Cold Spring, NY, has incredible natural body care and home products. My current favorite is their signature aftershave, called "Hudson."</p>
+<a href="https://www.etsy.com/listing/91233200/cat-nap-cocoon-cave-bed-house-vessel" target="_blank"><img src="http://i.imgur.com/hlSTskC.png" height=354 width=354 title="Cat Pod" alt="Cat Pod" style="border: none;"></a>
+<p id="p2">I have a strong feeling Mischka would love this felted wool cat vessel.</p>
+<a href="http://www.clickandgrow.com" target="_blank"><img src="http://i.imgur.com/8k9e71w.png" height=354 width=354 title="Click and Grow" alt="Click and Grow" style="border: none;"></a>
+<p id="p2">I am curious to see if this nanotechnology planter will successfully grow cockscomb flowers</p>
+<a href="http://domatcha.com/health/" target="_blank"><img src="http://i.imgur.com/IPvVIAx.png" height=354 width=354 title="Matcha Tea" alt="Matcha Tea" style="border: none;"></a>
+<p id="p2">Matcha green tea reportly possesses antioxidant levels that are 6 times that of goji berries, 7 times that of dark chocolate, 17 times that of wild blueberries and 60 times that of spinach. And it's frothy and delicious. I try to have a cup every morning and my current favorite brand is DoMatcha.</p>
+<a href="http://www.kravmagasolutions.com" target="_blank"><img src="http://i.imgur.com/ZBMhlp2.png" height=354 width=354 title="Krav Maga" alt="Krav Maga" style="border: none;"></a>
+<p id="p2">I'm in the process of learning Krav Maga, a brutal and invigorating self-defense modality learned and taught by members of the Isreali army. I had never punched anyone prior to starting my training a few months ago.</p>
+<a href="http://www.beardbrand.com/collections/grooming-kits/products/large-beard-grooming-kit" target="_blank"><img src="http://i.imgur.com/ooewAqZ.png" height=354 width=354 title="Beard Care" alt="Beard Care" style="border: none;"></a>
+<p id="p2">I stopped shaving several months ago with the goal of have the finest beard in all the land. Almost every day lately someone stops me on the street and compliments me on my beard -- so I guess I'm on the right track. Every morning and night I groom my beard with a kit I received as a birthday gift from Reuben's moms. Lately I've been having my beard professionally trimmed at Harry's Corner Shop on Houston Street.</p>
+</p>
+<a href="http://i.imgur.com/K6etLGX.png" target="_blank"><img src="http://i.imgur.com/K6etLGX.png" height=354 width=354 title="Teal" alt="Teal" style="border: none;"></a>
+<p id="p2">I have fallen in love with the color teal. I painted our shower stall area teal and recently bought some beautiful hand-poured teal glasses to drink from. The color inspires me.</p>
+
+
+</br></br>
+
+
+    <button><a href="#favouriteThings">Back To Top</a></button>
+    <button><a href="Joshua Guthals Resume.pdf" target="_blank">Check out my resume!</a></button>
+    </br></br>
+    <hr width='462px'>
+
+
+
+</div>
+</script>
+
+
+<script id="viewAboutMe" type='text/template'>
+  <div id="about-me">
+
 
 <hr width='462px'>
 </br>
-    <h2 id="Family"><u>My New York City family</u></h2>
-    <p>I have a slightly non-traditional, very modern family. Below you will see pictures (from top to bottom) of my cat Mischka, my boyfriend Atanas, my biological son Reuben who lives with his two moms, and my friends Andrew and Leah, and our beta fish Barnaby. Together this rag-tag group of creatures make up my immediate family here in NYC. (NOTE: To view a full-size version, just click on each photo.)</br></br><hr>
+    <h2 id="aboutMe"><u>My New York City family</u></h2>
+    <p>I have a slightly non-traditional, very modern family. Below you will see pictures (from top to bottom) of my cat Mischka, my boyfriend Atanas, my biological son Reuben who lives with his two moms, and my friends Andrew and Leah, and our beta fish Barnaby. Together this rag-tag group of creatures make up my immediate family here in NYC. (NOTE: To view a full-size version, just click on each photo.)</p></br></br>
+    <hr width='462px'>
 <a href="http://i.imgur.com/GaGllWT.png" target="_blank"><img src="http://i.imgur.com/GaGllWT.png" title="Mischka" alt="Mischka" style="border: none;"></a>
 <p id="p2">Little Mischka sniffs at the iPhone!</p>
 <a href="http://i.imgur.com/uc42M5c.png" target="_blank"><img src="http://i.imgur.com/uc42M5c.png" title="Atanas" alt="Atanas" style="border: none;"></a>
@@ -95,12 +139,17 @@
 <p id="p2">Leah poses for her OKCupid page!</p>
 <a href="http://i.imgur.com/McbXXfp.png" target="_blank"><img src="http://i.imgur.com/McbXXfp.png" title="Barnaby" alt="Barnaby" style="border: none;"></a>
 <p id="p2">This is actually the first version of Barnaby who died!</p>
-</p>
 </br></br>
 
-    <button><a href="favourite-things">Back To Top</a></button><button><a href="index">Back to Main Page!</a></button></br></br><hr>
-</div>
+    <button><a href="#favouriteThings">Back To Top</a></button>
+    <button><a href="index">Back to Main Page!</a></button>
 
+    </br></br>
+
+    <hr width="462px">
+
+</div>
+</script>
 
 </body>
 </html>

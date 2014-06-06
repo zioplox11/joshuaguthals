@@ -1,5 +1,7 @@
 var router;
 var hobbiesView, hobbies;
+var favouriteThingsView, favouriteThings;
+var aboutMeView, aboutMe;
 
 var AppRouter = Backbone.Router.extend({
 
@@ -7,11 +9,15 @@ var AppRouter = Backbone.Router.extend({
     router = this;
     hobbies = new Hobbies();
     hobbiesView = new HobbiesView({model: hobbies, el: $('#main-profile')});
+    favouriteThings = new FavouriteThings();
+    favouriteThingsView = new FavouriteThingsView({model: favouriteThings, el: $('#main-profile')});
+    aboutMe = new AboutMe();
+    aboutMeView = new AboutMeView({model: aboutMe, el: $('#main-profile')});
   },
 
   routes: {
     "hobbies"              : "myHobbies",
-    "family"              :   "myFamily",
+    "aboutMe"              :   "myAboutMe",
     "portfolio"           :   "myPorfolio",
     "favouriteThings"  : "myFavouriteThings",
   },
@@ -21,25 +27,28 @@ var AppRouter = Backbone.Router.extend({
   },
 
   myHobbies: function(){
-    console.log("hello");
     router.prepareNewView();
     $('.hobbies').css('text-decoration', 'underline');
     $('.hobbies').css('font-size', '1.2em');
     hobbiesView.renderHobbiesView();
   },
 
-  myFamily: function() {
+  myAboutMe: function() {
+    router.prepareNewView();
+    console.log("yoyoyoyo");
+    $('.about-me').css('text-decoration', 'underline');
+    $('.about-me').css('font-size', '1.2em');
+    aboutMeView.renderAboutMeView();
   },
 
   myPorfolio: function() {
   },
 
   myFavouriteThings: function() {
-    console.log("hello");
     router.prepareNewView();
     $('.favourite-things').css('text-decoration', 'underline');
-    $('.hobbies').css('font-size', '1.2em');
-    hobbiesView.renderHobbiesView();
+    $('.favourite-things').css('font-size', '1.2em');
+    favouriteThingsView.renderFavouriteThingsView();
   }
 
 });

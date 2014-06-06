@@ -86,7 +86,7 @@ opacity:1;
 filter:alpha(opacity=1); /* For IE8 and earlier */
 }
 
-article, #hobbies {
+article, #hobbies, #about-me, #favourite-things {
 max-width: 496px;
 padding: 10px;
 margin: 0 auto;
