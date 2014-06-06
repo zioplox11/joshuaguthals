@@ -24,6 +24,7 @@ var AppRouter = Backbone.Router.extend({
 
   prepareNewView: function(newView){
     $('#main-profile').children().hide();
+    router.clearClicks();
   },
 
   myHobbies: function(){
@@ -31,6 +32,11 @@ var AppRouter = Backbone.Router.extend({
     $('.hobbies').css('text-decoration', 'underline');
     $('.hobbies').css('font-size', '1.2em');
     hobbiesView.renderHobbiesView();
+  },
+
+  clearClicks: function(){
+    $('.clicks').css('text-decoration', 'none');
+    $('.clicks').css('font-size', '13px');
   },
 
   myAboutMe: function() {
