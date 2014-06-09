@@ -4,13 +4,21 @@
   <title>Joshua Aaron Guthals</title>
 
 
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+
+  <script async="true" src="javascripts/vendor/picturefill.js"></script>
+  <script src="javascripts/vendor/modernizer.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="stylesheets/style.css" rel="stylesheet">
-  <script type="text/javascript" src="javascripts/jquery.js"></script>
-  <script type="text/javascript" src="javascripts/underscore.js"></script>
-  <script type="text/javascript" src="javascripts/backbone.js"></script>
+
+  <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/underscore.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/backbone.js"></script>
   <script type="text/javascript" src="javascripts/hobbiesView.js"></script>
   <script type="text/javascript" src="javascripts/aboutMeView.js"></script>
   <script type="text/javascript" src="javascripts/favouriteThingsView.js"></script>
+  <script type="text/javascript" src="javascripts/portfolioView.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
 
 
@@ -18,8 +26,12 @@
 </head>
 <body>
 
+
 <div id='welcome'>
-  <img id="img1" src="http://i.imgur.com/EhOHG78.png" alt="Joshua's photo" title="Joshua Aaron Guthals sits by a well">
+  <div class='photo'>
+    <h1>hi</h1>
+  </div>
+
     <h1 id='hOpener'>Joshua Aaron Guthals</h1>
       <div id="pOpener">web developer & creative soul</div><br>
     <h5><span id='contactinfo'><a href="mailto:joshua.guthals@gmail.com" style="text-decoration: none">Email | </a><a href='https://github.com/zioplox11' target="_blank">GitHub | </a><a href="https://www.linkedin.com/in/jguthals" target="_blank">LinkedIn</a></span>
@@ -29,11 +41,11 @@
 
 <div id='main-nav'>
       <h3><ul class='nav-list'>
-    <li class="portfolio clicks" style="text-decoration: none"><a href="#portfolio">portfolio</a></li>
-     <li class="about-me clicks" style="text-decoration: none"><a href="#aboutMe">about me</a></li>
-      <li class="hobbies clicks" style="text-decoration: none"><a href="#hobbies">hobbies</a></li>
-      <li class="favourite-things clicks" style="text-decoration: none"><a href="#favouriteThings">favourite things</a></li>
-      <li class="resume clicks" style="text-decoration: none"><a href="Joshua Guthals Resume.pdf" target="_blank">resume</a></li>
+    <li class="portfolio clicks" style="text-decoration: none"><a href="#portfolio" class="colorClick portfolioHref">portfolio</a></li>
+     <li class="about-me clicks" style="text-decoration: none"><a href="#aboutMe" class="colorClick aboutHref">about me</a></li>
+      <li class="hobbies clicks" style="text-decoration: none"><a href="#hobbies" class="colorClick hobbyHref">hobbies</a></li>
+      <li class="favourite-things clicks" style="text-decoration: none"><a href="#favouriteThings" class="colorClick faveHref">favourite things</a></li>
+      <li class="resume clicks" style="text-decoration: none"><a href="Joshua Guthals Resume.pdf" target="_blank" class="colorClick resumeHref">resume</a></li>
     </ul></h3>
 </div>
 
@@ -42,13 +54,60 @@
 </div>
 
 
+<script id="viewPortfolio" type="text/template">
+  <div id="portfolio">
+  <hr width='462px'>
+  </br>
+
+    <h2 id="portfolio">Web Projects</h2>
+    <p>Over the past six months I have begun building web applications. 'Prowl' is a social networking app for LGBTQ women, 'MyBoro' is a one-stop spot to gather current information about your current location in NYC, and 'My Best Coffee' is a place where coffee lovers can expand their knowledge and coffee-making skills. 'Prowl' is a collaborative effort with Rob and Atanas, MyBoro is a group project with Jon, Carolyn, and Mike. 'AudioAvator' which created a colorful animation out of your favorite song, was recently completed at a Music Visualization Hackathon at Etsy Labs, and was a collaboration with Rob, Carolyn, Megan, and Cat. Last 'Hangman Is Fun' is a quick little game I built to allow you to enjoy hangman on your own.</p>
+
+  <div id='web-projects-nav'>
+      <h3><ul class='nav-list'>
+    <li class="prowl clicks" style="text-decoration: none"><a href="#prowl" class="colorClick photographyHref">Prowl</a></li>
+     <li class="my-boro clicks" style="text-decoration: none"><a href="#myBoro" class="colorClick kravMagaHref">MyBoro</a></li>
+      <li class="my-best-coffee clicks" style="text-decoration: none"><a href="#myBestCoffee" class="colorClick songWritingHref">My Best Coffee</a></li>
+      <li class="audio-avatar clicks" style="text-decoration: none"><a href="#audioAvatar" class="colorClick sportsHref">AudioAvatar</a></li>
+      <li class="hangman-is-fun clicks" style="text-decoration: none"><a href="#hangmanIsFun" class="colorClick sportsHref">Hangman Is Fun</a></li>
+    </ul></h3>
+</div>
+
+<hr width='462px'>
+
+<a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
+<p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
+
+
+    <button><a href="#portfolios">Back To Top</a></button>
+    <button><a href="#favouriteThings">Onward to Favourite Things!</a></button>
+    <button><a href="index">Back to Main Page!</a></button>
+    </br></br>
+
+<hr width='462px'>
+    </div>
+</script>
+
+
+
 <script id="viewHobbies" type="text/template">
   <div id="hobbies">
   <hr width='462px'>
   </br>
 
-    <h2 id="hobby"><u>My current exciting hobby</u></h2>
-    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. </p><p>My current passion, however, seems to be Instagram photography. You can visit my page <a href="http://instagram.com/jagnyc227" target="_blank">here</a> and you can also check out a sampling of my NYC photos by scrolling down the page below. (NOTE: To view a full-size version, just click on each photo.)</p></br></br>
+    <h2 id="hobby">What I like doing</h2>
+    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. Click any of the names below to learn more about my favorite hobbies.</p>
+
+  <div id='hobbies-nav'>
+      <h3><ul class='nav-list'>
+    <li class="photgraphy clicks" style="text-decoration: none"><a href="#photograpy" class="colorClick photographyHref">Photograpy</a></li>
+     <li class="krav-maga clicks" style="text-decoration: none"><a href="#kravMaga" class="colorClick kravMagaHref">Krav Maga</a></li>
+      <li class="song-writing clicks" style="text-decoration: none"><a href="#songWriting" class="colorClick songWritingHref">Song Writing</a></li>
+      <li class="sports clicks" style="text-decoration: none"><a href="#sports" class="colorClick sportsHref">Triathlons/Mud Runs</a></li>
+    </ul></h3>
+</div>
+
+
+
 <hr width='462px'>
 <a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
 <p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
@@ -86,7 +145,7 @@
   <hr width='462px'>
   </br>
 
-    <h2 id="favouriteThings"><u>These are a few of my favourite things</u></h2>
+    <h2 id="favouriteThings">These are a few of my favourite things</h2>
     <p>Ok, so first of all, no I'm not British. But why not add a "u" to "favorite" just to kick everything up a notch. This page is devoted to things past, present, and future that have caught my attention. Just click on each photo for more information. I will update this from time to time when new things strike my interest.</br></br><hr>
 <a href="http://www.coldspringapothecary.com" target="_blank"><img src="http://i.imgur.com/1vrW74y.png" height=354 width=354 title="Cold Spring Apothecary" alt="Cold Spring Apothecary" style="border: none;"></a>
 <p id="p2">This little shop in Cold Spring, NY, has incredible natural body care and home products. My current favorite is their signature aftershave, called "Hudson."</p>
@@ -125,7 +184,7 @@
 
 <hr width='462px'>
 </br>
-    <h2 id="aboutMe"><u>My New York City family</u></h2>
+    <h2 id="aboutMe">My New York City family</h2>
     <p>I have a slightly non-traditional, very modern family. Below you will see pictures (from top to bottom) of my cat Mischka, my boyfriend Atanas, my biological son Reuben who lives with his two moms, and my friends Andrew and Leah, and our beta fish Barnaby. Together this rag-tag group of creatures make up my immediate family here in NYC. (NOTE: To view a full-size version, just click on each photo.)</p></br></br>
     <hr width='462px'>
 <a href="http://i.imgur.com/GaGllWT.png" target="_blank"><img src="http://i.imgur.com/GaGllWT.png" title="Mischka" alt="Mischka" style="border: none;"></a>

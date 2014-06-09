@@ -13,13 +13,45 @@ src: url(../fonts/Gotham/Gotham-Light.otf);
 
 
 
-html, body {
-  max-width: 496px;
-  margin: 0 auto;
+
+html,
+body {
+  font-size: 100%;
   font-family: gotham_light;
   text-align: center;
   color: rgba(210,60,90,.8);
 }
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*=HTML5 Boilerplate Helpers
+--------------------------------------------------------------------------------------- */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.header-img {
+    margin: 40px auto;
+    width: 960px;
+}
+
 
 #welcome {
   margin: 0 auto;
@@ -32,6 +64,25 @@ html, body {
   width: 496px;
 /*  border: 1px solid red;*/
 }
+
+ .photo{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 470px;
+  width: 470px;
+  margin-bottom: 20px;
+  background-image: url('../images/images_1x_2x/welcome_images/joshua_by_well.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+ }
+
+  img{
+      border-radius: 6px;
+      max-width: 100%;
+  }
+
 
 .nav-list li{
   position: relative;
@@ -58,15 +109,6 @@ html, body {
 /*  border: 1px solid blue;*/
 }
 
-img {
-margin: 10px 0px 0px 0px;
-border-style:solid;
-border-radius: 6px;
-border: 5px rgba(210,170,90,.8);
-height: 470px;
-width: 470px;
-}
-
 img:hover
 {
 opacity:0.55;
@@ -79,15 +121,12 @@ filter:alpha(opacity=55); /* For IE8 and earlier */
 }
 
 
-#img1:hover
-{
-
-
-opacity:1;
-filter:alpha(opacity=1); /* For IE8 and earlier */
+#img1:hover{
+    opacity:1;
+    filter:alpha(opacity=1); /* For IE8 and earlier */
 }
 
-article, #hobbies, #about-me, #favourite-things {
+article, #hobbies, #about-me, #favourite-things, #portfolio {
 max-width: 496px;
 padding: 10px;
 margin: 0 auto;
@@ -201,4 +240,18 @@ li {
 padding: 5px;
 display: block;
 }
+}
 
+
+
+
+@media only screen and (max-width: 750px) {
+  .color-box{
+    background-color: green;
+  }
+  .photo{
+    display: block;
+    position: relative;
+    max-width: 100%;
+  }
+}

@@ -2,6 +2,7 @@ var router;
 var hobbiesView, hobbies;
 var favouriteThingsView, favouriteThings;
 var aboutMeView, aboutMe;
+var portfolioView, portfolio;
 
 var AppRouter = Backbone.Router.extend({
 
@@ -13,6 +14,8 @@ var AppRouter = Backbone.Router.extend({
     favouriteThingsView = new FavouriteThingsView({model: favouriteThings, el: $('#main-profile')});
     aboutMe = new AboutMe();
     aboutMeView = new AboutMeView({model: aboutMe, el: $('#main-profile')});
+    portfolio = new Portfolio();
+    portfolioView = new PortfolioView({model: portfolio, el: $('#main-profile')});
   },
 
   routes: {
@@ -22,38 +25,46 @@ var AppRouter = Backbone.Router.extend({
     "favouriteThings"  : "myFavouriteThings",
   },
 
-  prepareNewView: function(newView){
+  prepareNewView: function(heading, href){
     $('#main-profile').children().hide();
     router.clearClicks();
+    var thisHeading = $(heading);
+    var thisHref = $(href);
+    thisHeading.css('text-decoration', 'underline');
+    thisHref.css('color', 'rgba(210,60,90,0.8)');
   },
 
   myHobbies: function(){
-    router.prepareNewView();
-    $('.hobbies').css('text-decoration', 'underline');
-    $('.hobbies').css('font-size', '1.2em');
+    var myHeading = $('.hobbies');
+    var myHref = $('.hobbyHref');
+    router.prepareNewView(myHeading, myHref);
     hobbiesView.renderHobbiesView();
   },
 
   clearClicks: function(){
+    $('a.colorClick').css('color','rgba(101,101,108,1');
     $('.clicks').css('text-decoration', 'none');
     $('.clicks').css('font-size', '13px');
   },
 
   myAboutMe: function() {
-    router.prepareNewView();
-    console.log("yoyoyoyo");
-    $('.about-me').css('text-decoration', 'underline');
-    $('.about-me').css('font-size', '1.2em');
+    var myHeading = $('.about-me');
+    var myHref = $('.aboutHref');
+    router.prepareNewView(myHeading, myHref);
     aboutMeView.renderAboutMeView();
   },
 
   myPorfolio: function() {
+    var myHeading = $('.portfolio');
+    var myHref = $('.portfolioHref');
+    router.prepareNewView(myHeading, myHref);
+    portfolioView.renderPortfolioView();
   },
 
   myFavouriteThings: function() {
-    router.prepareNewView();
-    $('.favourite-things').css('text-decoration', 'underline');
-    $('.favourite-things').css('font-size', '1.2em');
+    var myHeading = $('.favourite-things');
+    var myHref = $('.faveHref');
+    router.prepareNewView(myHeading, myHref);
     favouriteThingsView.renderFavouriteThingsView();
   }
 

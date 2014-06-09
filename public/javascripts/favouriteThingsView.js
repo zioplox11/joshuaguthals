@@ -14,7 +14,6 @@ var FavouriteThingsView = Backbone.View.extend({
   renderFavouriteThingsView: function(){
     var strangeTemplateGlitch =  _.template($("#viewFavouriteThings").html());
     this.$el.empty();
-    console.log('empty');
     this.$el.html(strangeTemplateGlitch(this.model.toJSON()));
   },
 
