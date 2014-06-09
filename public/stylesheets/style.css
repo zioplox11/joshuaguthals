@@ -12,8 +12,6 @@ src: url(../fonts/Gotham/Gotham-Light.otf);
 }
 
 
-
-
 html,
 body {
   font-size: 100%;
@@ -47,12 +45,6 @@ body {
     clear: both;
 }
 
-.header-img {
-    margin: 40px auto;
-    width: 960px;
-}
-
-
 #welcome {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -67,7 +59,7 @@ body {
 /*  border: 1px solid red;*/
 }
 
- .photo{
+ .welcome-photo{
   position: relative;
   display: block;
   margin: 0 auto;
@@ -81,9 +73,22 @@ body {
   background-position: center;
  }
 
+ .photography-photo{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 470px;
+  width: 470px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+  background-position: center;
+ }
+
   img{
-      border-radius: 6px;
-      max-width: 100%;
+    border-radius: 6px;
+    max-width: 100%;
   }
 
 
@@ -248,7 +253,7 @@ display: block;
 
 @media only screen and (max-width: 700px) {
 
-  .photo{
+.welcome-photo{
     max-width: 90%;
 /*    background-image: url('../images/images_small/welcome_images/joshua_by_well.jpg');*/
   }
@@ -259,14 +264,14 @@ display: block;
   #hOpener{
     margin: 0 auto;
     padding: 0 auto;
-    margin-bottom: 15px;quotes: ;
+    margin-bottom: 15px;
     font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 300px) {
 
-  .photo{
+  .welcome-photo{
     max-width: 90%;
     max-height: 90%;
     margin-bottom: 0px;
@@ -274,5 +279,11 @@ display: block;
   }
   #welcome{
     width: 100%;
+  }
+  #hOpener{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 15px;quotes: ;
+    font-size: 2em;
   }
 }
