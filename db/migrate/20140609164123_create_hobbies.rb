@@ -3,7 +3,7 @@ class CreateHobbies < ActiveRecord::Migration
     create_table :hobbies do |t|
       t.string :name
       t.text :description
-
+      t.string :finder
       t.timestamps
     end
   end

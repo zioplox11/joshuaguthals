@@ -22,11 +22,7 @@ prowl_photo = Photo.create(image_url: 'public/images/images_1x_2x/portfolio_stil
 
 reuben_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/reuben_with_pretzel.jpg', description: 'Reuben eats a pretzel.', name: 'Reuben')
 
-
-
-#  name        :string(255)
-#  description :text
-
+mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
 
 FavouriteThing.delete_all
 
@@ -36,9 +32,17 @@ favouritething1.photos << click_n_grow
 
 Hobby.delete_all
 
-hobby1 = Hobby.create(name: 'Krav Maga self defense training', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
+hobby1 = Hobby.create(finder: 'kravmaga', name: 'Krav Maga self defense training', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
+
+hobby2 = Hobby.create(finder: 'sports', name: 'Triathlons/Mud runs', description: 'I have been dabbling in triathlons and mud runs for several years. I splashed through some serious mud in Ireland, completed the NYC olympic distance triathlon, and most recently headed up to the Bronx for a very muddy experience indeed (as seen in attached photo.' )
+
+hobby3 = Hobby.create(finder: 'songs', name: 'Krav Maga self defense training', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
+
+hobby4 = Hobby.create(finder: 'photography', name: 'Krav Maga self defense training', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
 
 hobby1.photos << krav_maga
+
+hobby2.photos << mud_run
 
 WebProject.delete_all
 

@@ -91,39 +91,16 @@
     <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. Click any of the names below to learn more about my favorite hobbies.</p>
     <div id='hobbies-nav'>
       <h3>
-        <ul class='nav-list'>
-        <li class="photgraphy clicks" style="text-decoration: none"><a href="#photograpy" class="colorClick photographyHref">Photograpy</a></li>
-        <li class="krav-maga clicks" style="text-decoration: none"><a href="#kravMaga" class="colorClick kravMagaHref">Krav Maga</a></li>
-        <li class="song-writing clicks" style="text-decoration: none"><a href="#songWriting" class="colorClick songWritingHref">Song Writing</a></li>
-        <li class="sports clicks" style="text-decoration: none"><a href="#sports" class="colorClick sportsHref">Triathlons/Mud Runs</a></li>
+        <ul class='nav-list-hobbies'>
+        <li class="photography hclicks" style="text-decoration: none">Photograpy</li>
+        <li class="krav-maga hclicks" style="text-decoration: none">Krav Maga</li>
+        <li class="song-writing hclicks" style="text-decoration: none">Song Writing</li>
+        <li class="sports hclicks" style="text-decoration: none">Triathlons/Mud Runs</li>
       </ul>
       </h3>
     </div>
     <hr width='462px'>
-    <a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
-    <p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
-    <a href="http://i.imgur.com/LdDiwvH.png" target="_blank"><img src="http://i.imgur.com/LdDiwvH.png" title="One Flight Down" alt="One Flight Down" style="border: none;"></a>
-    <p id="p2">A bugle rests in a trashcan. Something awaits one flight down.</p>
-    <a href="http://i.imgur.com/0odpUrh.png" target="_blank"><img src="http://i.imgur.com/0odpUrh.png" title="Fabled" alt="Fabled" style="border: none;"></a>
-    <p id="p2">Rich hues of midtown high-rises, storied and fabled.</p>
-    <a href="http://i.imgur.com/1Z06CZI.png" target="_blank"><img src="http://i.imgur.com/1Z06CZI.png" title="Collapse" alt="Collapse" style="border: none;"></a>
-    <p id="p2">A person rests in the corner of the 14th Street subway station</p>
-    <a href="http://i.imgur.com/HjxcLPx.png" target="_blank"><img src="http://i.imgur.com/HjxcLPx.png" title="Metal Gloss" alt="Metal Gloss" style="border: none;"></a>
-    <p id="p2">Workers pile stacks of glossy metal before the build</p>
-    <a href="http://i.imgur.com/xrotSYo.png" target="_blank"><img src="http://i.imgur.com/xrotSYo.png" title="Hot Pink" alt="Hot Pink" style="border: none;"></a>
-    <p id="p2">A line of hot pink paint follows the construction in Clinton Hill</p>
-    <a href="http://i.imgur.com/NE48gYy.png" target="_blank"><img src="http://i.imgur.com/NE48gYy.png" title="Clouds First" alt="Clouds First" style="border: none;"></a>
-    <p id="p2">A view of the city soaked in rain from the Empire State Building</p>
-    <a href="http://i.imgur.com/n01YfzX.png" target="_blank"><img src="http://i.imgur.com/n01YfzX.png" title="Cans" alt="Cans" style="border: none;"></a>
-    <p id="p2">A woman stumbles down the sidewalk near Union Square, gathering recylables</p>
-    <a href="http://i.imgur.com/XLp9yBN.png" target="_blank"><img src="http://i.imgur.com/XLp9yBN.png" title="Black Bird" alt="Black Bird" style="border: none;"></a>
-    <p id="p2">A bird arcs near Penn Station</p>
-    </br></br>
-    <button><a href="#hobbies">Back To Top</a></button>
-    <button><a href="#favouriteThings">Onward to Favourite Things!</a></button>
-    <button><a href="index">Back to Main Page!</a></button>
-    </br></br>
-    <hr width='462px'>
+
   </div>
 </script>
 
@@ -188,6 +165,28 @@
     <hr width="462px">
 
 </div>
+</script>
+
+
+
+
+<script id="view_hobby" type="text/template">
+
+    <div id="tba">
+
+      <h2 class="tbaa"><%= name %></h2>
+      <p id='p2'><%= description %></p>
+
+  <div class='hobby-photo'>
+      <img src=<%= photo %>
+    </div>
+        <p id="p2"><%= photo_des %></p>
+
+
+      <button class="tbaaa">Use this button later</button>
+
+
+    </div>
 </script>
 
 </body>

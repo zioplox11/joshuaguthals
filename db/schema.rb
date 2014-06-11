@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140609165748) do
   create_table "hobbies", force: true do |t|
     t.string   "name"
     t.text     "description"
+    t.string   "finder"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

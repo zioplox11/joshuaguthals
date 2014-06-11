@@ -15,7 +15,16 @@ class HobbiesController < ApplicationController
   end
 
   def show
-    render json: @hobby
+    @hobby = Hobby.find_by({finder: params[:interest]})
+    photo = @hobby.photos.first.image_url
+    photo_des = @hobby.photos.first.description
+    hobby = {
+      name: @hobby.name,
+      description: @hobby.description,
+      photo: photo,
+      photo_des: photo_des
+    }
+    render json: hobby
   end
 
   def destroy
@@ -44,6 +53,7 @@ class HobbiesController < ApplicationController
       params.require(:hobby).permit(
         :name,
         :description,
+        :finder,
         :created_at,
         :updated_at
       )
