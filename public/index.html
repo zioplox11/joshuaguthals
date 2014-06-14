@@ -88,7 +88,7 @@
     <hr width='462px'>
     </br>
     <h2 id="hobby">What I like doing</h2>
-    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. Click any of the names below to learn more about my favorite hobbies.</p>
+    <p>Many interests have captured my attention throughout the years. Music, volleyball, triathlons, charcoal drawing, and Krav Maga are some of the my top engagements. Click any of the names below to learn more about some of my favorite hobbies.</p>
     <div id='hobbies-nav'>
       <h3>
         <ul class='nav-list-hobbies'>
@@ -96,6 +96,8 @@
         <li class="krav-maga hclicks" style="text-decoration: none">Krav Maga</li>
         <li class="song-writing hclicks" style="text-decoration: none">Song Writing</li>
         <li class="sports hclicks" style="text-decoration: none">Triathlons/Mud Runs</li>
+        <li class="beard hclicks" style="text-decoration: none">Beard Grooming</li>
+        <li class="hiv-prevention hclicks" style="text-decoration: none">HIV Prevention and Care</li>
       </ul>
       </h3>
     </div>
@@ -178,9 +180,15 @@
       <p id='p2'><%= description %></p>
 
   <div class='hobby-photo'>
-      <img src=<%= photo %>
+      <img src=<%= photo1 %>
     </div>
-        <p id="p2"><%= photo_des %></p>
+    <p id="p2"><%= photo1_des %></p>
+  <% if (photo2) %>
+  <div class='hobby-photo'>
+      <img src=<%= photo2 %>
+  </div>
+  <p id="p2"><%= photo2_des %></p>
+  <% end %>
 
 
       <button class="tbaaa">Use this button later</button>

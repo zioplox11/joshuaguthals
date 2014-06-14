@@ -16,14 +16,23 @@ class HobbiesController < ApplicationController
 
   def show
     @hobby = Hobby.find_by({finder: params[:interest]})
-    photo = @hobby.photos.first.image_url
-    photo_des = @hobby.photos.first.description
     hobby = {
       name: @hobby.name,
-      description: @hobby.description,
-      photo: photo,
-      photo_des: photo_des
+      description: @hobby.description
     }
+    if (length = @hobby.photos.length > 0)
+      counter = 0
+      length.times do
+          photo = 'photo' + counter.to_s
+          photo_des = photo + '_des'
+          hobby[photo.to_sym] = @hobby.photos[counter].image_url
+          hobby[photo_des.to_sym] = @hobby.photos[counter].description
+          counter += 1
+      end
+    end
+
+binding.pry
+
     render json: hobby
   end
 
