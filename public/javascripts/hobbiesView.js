@@ -20,6 +20,8 @@ var HobbiesView = Backbone.View.extend({
     "click .krav-maga" : "renderKravMagaView",
     "click .song-writing" : "renderSongWritingView",
     "click .sports" : "renderSportsView",
+    "click .beard" : "renderBeardView",
+    "click .hiv-prevention" : "renderHIVPlanningView",
   },
 
   renderHobbiesView: function(){
@@ -45,6 +47,18 @@ var HobbiesView = Backbone.View.extend({
     var sports = 'sports';
     this.clearClicks(sports);
     this.displayHobby(sports);
+  },
+
+  renderBeardView: function(){
+    var beard = 'beard';
+    this.clearClicks(beard);
+    this.displayHobby(beard);
+  },
+
+  renderHIVPlanningView: function(){
+    var hIVPlanning = 'hivplanning';
+    this.clearClicks(hIVPlanning);
+    this.displayHobby(hIVPlanning);
   },
 
   renderPhotosView: function(){

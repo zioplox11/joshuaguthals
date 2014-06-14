@@ -20,7 +20,9 @@ class HobbiesController < ApplicationController
       name: @hobby.name,
       description: @hobby.description
     }
-    if (length = @hobby.photos.length > 0)
+    if (@hobby.photos.length > 0)
+      length = @hobby.photos.length
+      hobby[:length] = length
       counter = 0
       length.times do
           photo = 'photo' + counter.to_s
@@ -30,8 +32,6 @@ class HobbiesController < ApplicationController
           counter += 1
       end
     end
-
-binding.pry
 
     render json: hobby
   end

@@ -180,15 +180,15 @@
       <p id='p2'><%= description %></p>
 
   <div class='hobby-photo'>
-      <img src=<%= photo1 %>
+      <img src=<%= photo0 %>
     </div>
-    <p id="p2"><%= photo1_des %></p>
-  <% if (photo2) %>
+    <p id="p2"><%= photo0_des %></p>
+  <% if (photo0 == 'frog') { %>
   <div class='hobby-photo'>
-      <img src=<%= photo2 %>
+      <img src=<%= photo1 %>
   </div>
-  <p id="p2"><%= photo2_des %></p>
-  <% end %>
+  <p id="p2"><%= photo1_des %></p>
+  <% } %>
 
 
       <button class="tbaaa">Use this button later</button>

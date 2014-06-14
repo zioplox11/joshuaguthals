@@ -28,7 +28,7 @@ my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg'
 
 hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.', name: 'HIV Awareness Event')
 
-bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug)on_water_sky.jpg', description: 'Up becomes down and down becomes up as a water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
+bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug_on_water_sky.jpg', description: 'Up becomes down and down becomes up as a water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
 
 FavouriteThing.delete_all
 
@@ -42,13 +42,13 @@ krav = Hobby.create(finder: 'kravmaga', name: 'Krav Maga self defense training',
 
 sports = Hobby.create(finder: 'sports', name: 'Triathlons/Mud runs', description: 'I have been dabbling in triathlons and mud runs for several years. I splashed through some serious mud in Ireland, completed the NYC olympic distance triathlon, and most recently headed up to the Bronx for a very muddy experience indeed (as seen in attached photo.' )
 
-songs = Hobby.create(finder: 'songs', name: 'Song-writing and general music-making', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
+songs = Hobby.create(finder: 'songs', name: 'Song-writing and general music-making', description: '' )
 
-photos = Hobby.create(finder: 'photography', name: 'Digital photogray', description: 'I have been practicing Krav Maga for about three months. It is a self-defense modality that is part of the basic training of the Isreali army. It emphasizes defending yourself from attackers by neutralizing them in the fewest (and most damaging) steps possible.' )
+photos = Hobby.create(finder: 'photography', name: 'Digital photography', description: '' )
 
 beard = Hobby.create(finder: 'beard', name: 'Beard management', description: 'Last summer I decided to take the plunge and start growing out my beard. I bought a great beard grooming kit and began brushing and oiling my beard morning and evening and taking biotin which purportedly strengthens human hair. I also started getting professional beard trims from Duval at <a href="harryscorner.com" target="_blank">Harrys Corner Shop</a>. Before I knew it, many people began stopping on the streets, the subway, at restaurants, etc., asking me how I got such a great, healthy beard! So I guess all my grooming efforts really worked.')
 
-hivprevention = Hobby.create(finder: 'hiv prevention and care', name: 'HIV Prevention, Planning, and Care', description:'')
+hivprevention = Hobby.create(finder: 'hivplanning', name: 'HIV Prevention, Planning, and Care', description:'')
 
 krav.photos << krav_maga
 
