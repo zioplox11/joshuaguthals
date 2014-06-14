@@ -24,9 +24,11 @@ reuben_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_famil
 
 mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
 
-my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg', description: 'I spend an absurd amount of time grooming and tending to my beard.' name: 'My beard')
+my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg', description: 'I spend an absurd amount of time grooming and tending to my beard.', name: 'My beard')
 
-hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.' name: 'HIV Awareness Event'))
+hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.', name: 'HIV Awareness Event')
+
+bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug)on_water_sky.jpg', description: 'Up becomes down and down becomes up as a water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
 
 FavouriteThing.delete_all
 
@@ -54,7 +56,10 @@ sports.photos << mud_run
 
 beard.photos << my_beard
 
-hivprevention.songs << hiv_awareness
+hivprevention.photos << hiv_awareness
+
+photos.photos << bug_on_water
+
 
 
 
