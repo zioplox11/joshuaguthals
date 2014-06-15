@@ -20,9 +20,9 @@ class HobbiesController < ApplicationController
       name: @hobby.name,
       description: @hobby.description
     }
-    if (@hobby.photos.length > 0)
-      photo_length = @hobby.photos.length
-      hobby[:photo_length] = photo_length
+    photo_length = @hobby.photos.length
+    hobby[:photo_length] = photo_length
+    if (photo_length > 0)
       counter = 0
       hobby[:photos] = []
       photo_length.times do
