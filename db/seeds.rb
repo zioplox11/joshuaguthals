@@ -74,7 +74,7 @@ plane_above = Photo.create(image_url: '../images/images_1x_2x/hobbies/photograph
 
 building_facade= Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/building_facade.jpg', description: 'This particular building jutted upward near the New York Public Library in a very proper way. It was quite erect.', name: 'Upward building')
 
-orange_boots = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/orange_boots_subway.jpg', description: 'The orange boots, the umbrella, and the determined look really caught my eye.', name: 'Orange Boots and Umbrella')
+orange_boots = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/orange_boots_subway.jpg', description: 'The orange boots, the umbrella, and the blank look really caught my eye.', name: 'Orange Boots and Umbrella')
 
 south_brooklyn = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/south_brooklyn.jpg', description: 'It seems impossible that this gorgeous spot could be in south Brooklyn but it is.', name: 'South Brooklyn escape')
 
@@ -112,6 +112,8 @@ beard.photos << beard_with_ice
 
 hivprevention.photos << hiv_awareness
 
+photos.photos << man_spyview
+
 photos.photos << canoes
 
 photos.photos << sweaty_pink
@@ -122,6 +124,12 @@ photos.photos << burger_klein
 
 photos.photos << sun_dapple
 
+photos.photos << looking_down
+
+photos.photos << red_buggy
+
+photos.photos << looming_cloud
+
 photos.photos << triple_in_field
 
 photos.photos << greenball
@@ -130,17 +138,9 @@ photos.photos << building_facade
 
 photos.photos << empire_state_on_top
 
-photos.photos << looking_down
-
-photos.photos << red_buggy
-
-photos.photos << looming_cloud
-
 photos.photos << fruitstand
 
 photos.photos << maple_leaves
-
-photos.photos << man_spyview
 
 photos.photos << sleeping_atanas
 
