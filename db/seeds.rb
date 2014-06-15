@@ -28,7 +28,7 @@ beard_with_ice = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_w
 
 my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg', description: 'I spend an absurd amount of time grooming and tending to my beard.', name: 'My beard')
 
-beard_google_glass = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_google_glass.jpg', description: 'Google Glass didn\'t please me too much. But I still took at quick selfie before I had to give it back.', name: 'Beard at Google Glass')
+beard_google_glass = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_google_glass.jpg', description: 'Google Glass didn\'t please me too much. But I still took this quick selfie before I had to give Glass back.', name: 'Beard at Google Glass')
 
 hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.', name: 'HIV Awareness Event')
 
