@@ -24,7 +24,11 @@ reuben_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_famil
 
 mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
 
+beard_with_ice = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_with_ice.jpg', description: 'I walked for a solid hour throughout Park Slope in the heavy snow. I ended up with a very icy beard.', name: 'Beard With Ice')
+
 my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg', description: 'I spend an absurd amount of time grooming and tending to my beard.', name: 'My beard')
+
+beard_google_glass = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_google_glass.jpg', description: 'Google Glass didn\'t please me too much. But I still took at quick selfie before I had to give it back.', name: 'Beard at Google Glass')
 
 hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.', name: 'HIV Awareness Event')
 
@@ -64,6 +68,7 @@ truck_storm = Photo.create(image_url: '../images/images_1x_2x/hobbies/photograph
 
 maple_leaves = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/red_maple_above.jpg', description: 'This was in Cherry Hill, New Jersey. There was a simply stunning Asian maple tree in someone\'s front yard.', name: 'Maple leaves')
 
+triple_in_field = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/triple_in_field.jpg', description: 'Atanas sat with his aunt and uncle out in a huge field on separate benches.', name: 'Triple in Field')
 
 plane_above = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/plane_above.jpg', description: 'A plane was flying above Grand Army Plaza. I had to zoom way in but ended up liking the feeling that created.', name: 'Plane above')
 
@@ -91,7 +96,7 @@ songs = Hobby.create(finder: 'songs', name: 'Song-writing and general music-maki
 
 photos = Hobby.create(finder: 'photography', name: 'Digital photography', description: 'With the constant improvements of Instagram, Afterlight, VSCOcam, and the like, it has become increasingly enjoyable to take, edit, and share photos with my iPhone. Here is a random sampler of the photos I have taken in recent months.' )
 
-beard = Hobby.create(finder: 'beard', name: 'Beard management', description: 'Last summer I decided to take the plunge and start growing out my beard. I bought a great beard grooming kit and began brushing and oiling my beard morning and evening and taking biotin which purportedly strengthens human hair. I also started getting professional beard trims from Duval at <a href="harryscorner.com" target="_blank">Harrys Corner Shop</a>. Before I knew it, many people began stopping me on the streets, the subway, at restaurants, etc., asking me how I got such a great, healthy beard! So I guess all my grooming efforts really worked.')
+beard = Hobby.create(finder: 'beard', name: 'Beard management', description: 'Last summer I decided to take the plunge and start growing out my beard. I bought a great beard grooming kit and began brushing and oiling my beard morning and evening and taking biotin which purportedly strengthens human hair. I also started getting professional beard trims from Duval at <a href="http://harryscorner.com" target="_blank">Harrys Corner Shop</a>. Before I knew it, many people began stopping me on the streets, the subway, at restaurants, etc., asking me how I got such a great, healthy beard! So I guess all my grooming efforts really worked.')
 
 hivprevention = Hobby.create(finder: 'hivplanning', name: 'HIV Prevention, Planning, and Care', description:'')
 
@@ -100,6 +105,10 @@ krav.photos << krav_maga
 sports.photos << mud_run
 
 beard.photos << my_beard
+
+beard.photos << beard_google_glass
+
+beard.photos << beard_with_ice
 
 hivprevention.photos << hiv_awareness
 
@@ -112,6 +121,8 @@ photos.photos << bug_on_water
 photos.photos << burger_klein
 
 photos.photos << sun_dapple
+
+photos.photos << triple_in_field
 
 photos.photos << greenball
 
