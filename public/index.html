@@ -179,18 +179,14 @@
       <h2 class="tbaa"><%= name %></h2>
       <p id='p2'><%= description %></p>
 
-  <div class='hobby-photo'>
-      <img src=<%= photo0 %>
+
+<div class='hobby-photo'>
+<% debugger; %>
+<% for (var i = 0; i < photo_length; i++ ) { %>
+      <img src=<%= photos[i]['photo']  %>
     </div>
-    <p id="p2"><%= photo0_des %></p>
-  <% if (photo0 == 'frog') { %>
-  <div class='hobby-photo'>
-      <img src=<%= photo1 %>
-  </div>
-  <p id="p2"><%= photo1_des %></p>
-  <% } %>
-
-
+    <p id="p2"><%= photos[i]['photo_des'] %></p>
+<% } %>
       <button class="tbaaa">Use this button later</button>
 
 

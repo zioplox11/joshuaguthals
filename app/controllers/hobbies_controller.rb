@@ -21,18 +21,17 @@ class HobbiesController < ApplicationController
       description: @hobby.description
     }
     if (@hobby.photos.length > 0)
-      length = @hobby.photos.length
-      hobby[:length] = length
+      photo_length = @hobby.photos.length
+      hobby[:photo_length] = photo_length
       counter = 0
-      length.times do
-          photo = 'photo' + counter.to_s
-          photo_des = photo + '_des'
-          hobby[photo.to_sym] = @hobby.photos[counter].image_url
-          hobby[photo_des.to_sym] = @hobby.photos[counter].description
+      hobby[:photos] = []
+      photo_length.times do
+          hobby[:photos][counter]={}
+          hobby[:photos][counter][:photo] = @hobby.photos[counter].image_url
+          hobby[:photos][counter][:photo_des] = @hobby.photos[counter].description
           counter += 1
       end
     end
-
     render json: hobby
   end
 
