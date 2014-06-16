@@ -23,6 +23,12 @@ var AppRouter = Backbone.Router.extend({
     "aboutMe"              :   "myAboutMe",
     "portfolio"           :   "myPorfolio",
     "favouriteThings"  : "myFavouriteThings",
+    "photography"     : "hobbyPhotography",
+    "sports"     : "hobbySports",
+    "kravmaga"     : "hobbyKrav",
+    "hivplanning"     : "hobbyHIVPrevention",
+    "beard"     : "hobbyBeard",
+    "songwriting"     : "hobbySongs",
   },
 
   prepareNewView: function(heading, href){
@@ -39,6 +45,30 @@ var AppRouter = Backbone.Router.extend({
     var myHref = $('.hobbyHref');
     router.prepareNewView(myHeading, myHref);
     hobbiesView.renderHobbiesView();
+  },
+
+  hobbyPhotography: function(){
+    hobbiesView.renderPhotosView();
+  },
+
+  hobbySongs: function(){
+    hobbiesView.renderSongWritingView();
+  },
+
+  hobbyBeard: function(){
+    hobbiesView.renderBeardView();
+  },
+
+  hobbyHIVPrevention: function(){
+    hobbiesView.renderHIVPlanningView();
+  },
+
+  hobbyKrav: function(){
+    hobbiesView.renderKravMagaView();
+  },
+
+  hobbySports: function(){
+    hobbiesView.renderSportsView();
   },
 
   clearClicks: function(){

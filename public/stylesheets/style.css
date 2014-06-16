@@ -159,6 +159,8 @@ a:hover { color: rgba(210,60,90,.8); }
 
 .photography:hover, .krav-maga:hover, .beard:hover, .hiv-prevention:hover, .song-writing:hover, .sports:hover { color: rgba(210,60,90,.8); cursor: pointer;}
 
+
+
 h1 {
   color: rgb(101 , 101 ,108 );
   font-weight: normal;

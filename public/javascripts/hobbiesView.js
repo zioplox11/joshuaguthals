@@ -84,12 +84,14 @@ var HobbiesView = Backbone.View.extend({
       finder = 'krav-maga';
     } else if (finder === 'songs'){
       finder = 'song-writing';
+    } else if (finder === 'hivplanning'){
+      finder = 'hiv-prevention';
     }
 
-    $('.hclicks').css('color','rgba(101,101,108,1');
+    $('.hclicks').children().css('color','rgba(101,101,108,1');
     $('.hclicks').css('text-decoration', 'none');
     $('.' +finder).css('text-decoration', 'underline');
-    $('.' +finder).css('color', 'rgba(210,60,90,0.8)');
+    $('.' +finder).children().css('color', 'rgba(210,60,90,0.8)');
   },
 
 

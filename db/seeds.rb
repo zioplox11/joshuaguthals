@@ -22,6 +22,18 @@ prowl_photo = Photo.create(image_url: 'public/images/images_1x_2x/portfolio_stil
 
 reuben_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/reuben_with_pretzel.jpg', description: 'Reuben eats a pretzel.', name: 'Reuben')
 
+micah_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/micah.jpg', description: 'He is little and super duper cute.', name: 'Micah')
+
+leah_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/leah_and_joshua.jpg', description: 'Leah helped organize a giant, amazing Parks Department event at NYU. Afterward she posed with me', name: 'Leah')
+
+atanas_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/atanas_and_joshua.jpg', description: 'Atanas and I went to the Griffith Observatory in Los Angeles.', name: 'Atanas and Joshua')
+
+ilana_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled nicely for the camera.', name: 'Atanas and Ilana')
+
+mischka_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took a particular interest in my metal back scratcher one morning. I took full advantage of her curiousity by holding it just behind my camera so as to snap this rare direct photo her.', name: 'Mischka')
+
+barnaby_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Barnaby the betta fish died a few weeks ago. Atanas make this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
+
 mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
 
 beard_with_ice = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_with_ice.jpg', description: 'I walked for a solid hour throughout Park Slope in the heavy snow. I ended up with a very icy beard.', name: 'Beard With Ice')
@@ -160,9 +172,6 @@ photos.photos << newyork
 
 
 
-
-
-
 WebProject.delete_all
 
 webproject1 = WebProject.create(name: 'Prowl', description: 'A lesbian dating, sex, friendship, and social networking app. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couples expecting children -- we are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ')
@@ -171,9 +180,42 @@ webproject1.photos << prowl_photo
 
 AboutMe.delete_all
 
-aboutme1 = AboutMe.create(name: 'Reuben', description: 'Reuben is my older biological son. He is being raised by his moms here in Brooklyn. He is bright, witty, and 3 years old.')
+reuben = AboutMe.create(name: 'Reuben', description: 'Reuben is my older biological son. He is being raised by his moms here in Brooklyn. He is bright, witty, and 3 years old.')
 
-aboutme1.photos << reuben_photo
+barnaby = AboutMe.create(name: 'Barnaby', description: 'Barnaby the betta fish lived for 44 seemingly happy weeks before suddenly dying. We are not sure why. As of now we have not replaced him as we are not sure we will have fish anymore.')
+
+mischka = AboutMe.create(name: 'Mischka', description: 'I adopted this little sprite of a cat as a gift from Reuben\'s moms. She was terribly shy at first, never even leaving the corner of the closet. As the years passed, she became friendlier and more confident. It helped that Atanas has great skill with strings and Mischka truly loves strings.')
+
+micah = AboutMe.create(name: 'Micah', description: 'Micah is Reuben\'s little brother, and is about four months old. He makes utterly adorable facial expression and some rather endearing gurgles and blurbles as well.')
+
+leah = AboutMe.create(name: 'Leah', description: '')
+
+atanas = AboutMe.create(name: 'Atanas', description: '')
+
+andrew = AboutMe.create(name: 'Andrew', description: '')
+
+joshua = AboutMe.create(name: 'Joshua', description: '')
+
+lani = AboutMe.create(name: 'Ilana', description: '')
+
+reuben.photos << reuben_photo
+
+barnaby.photos << barnaby_photo
+
+mischka.photos << mischka_photo
+
+micah.photos << micah_photo
+
+leah.photos << leah_photo
+
+atanas.photos << atanas_photo
+
+# andrew.photos << andrew_photo
+
+# joshua.photos << joshua_photo
+
+lani.photos << ilana_photo
+
 
 
 
