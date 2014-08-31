@@ -1,16 +1,10 @@
 var router;
-var hobbiesView, hobbies;
-var favouriteThingsView, favouriteThings;
-var aboutMeView, aboutMe;
-
 var AppRouter = Backbone.Router.extend({
 
   initialize: function(){
     router = this;
     photography = new Hobbies();
     photosView = new HobbiesView({model: photography, el: $('#main-profile')});
-    favouriteThings = new FavouriteThings();
-    favouriteThingsView = new FavouriteThingsView({model: favouriteThings, el: $('#main-profile')});
     aboutMe = new AboutMe();
     aboutMeView = new AboutMeView({model: aboutMe, el: $('#main-profile')});
   },
@@ -48,7 +42,7 @@ var AppRouter = Backbone.Router.extend({
     var myHeading = $('.about-me');
     var myHref = $('.aboutHref');
     router.prepareNewView(myHeading, myHref);
-    aboutMeView.renderAboutMeView();
+    aboutMeView.renderCollectionView();
   },
 
   myPorfolio: function() {

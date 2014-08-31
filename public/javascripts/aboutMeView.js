@@ -5,11 +5,11 @@
 var AboutMeView = Backbone.View.extend({
 
   initialize: function(){
-    this.renderCollectionView();
+    // this.renderCollectionView();
   },
 
   events: {
-    "click .about-me" : "renderAboutMeView",
+    "click .about-me" : "renderCollectionView",
   },
 
   renderAboutMeView: function(){
@@ -28,12 +28,18 @@ var AboutMeView = Backbone.View.extend({
     var AboutMeList = Backbone.Collection.extend({
       model: Ted
     });
-    var aboutMeList = new AboutMeList();
+    var that = this;
+    aboutMeList = new AboutMeList();
     aboutMeList.url = '/about_mes/list'
     var aboutMeWorld =  _.template($("#view_about_me").html());
-     var canDo = aboutMeList.fetch();
-     debugger;
-     console.log(canDo);
+    aboutMeList.fetch().complete(function(){
+        // $(".allAboutMes").remove();
+        var pigeon = $(".allAboutMes");
+        var getPosting = $(".allAboutMeCollection");
+        getPosting.html(aboutMeWorld(aboutMeList.toJSON()[0]));
+        getPosting.show();
+        pigeon.append(getPosting);
+    });
   }
 
 });

@@ -18,23 +18,23 @@ click_n_grow = Photo.create(image_url: '../public/images/images_1x_2x/favourite_
 
 krav_maga = Photo.create(image_url: '../images/images_1x_2x/hobbies/krav_maga.jpg', description: 'People fight each other using Krav Maga', name: 'Krav Maga')
 
-prowl_photo = Photo.create(image_url: 'public/images/images_1x_2x/portfolio_stills/prowl_photo.jpg', description: 'Prowl App landing page', name: 'Prowl Landing')
+prowl_photo = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_photo.jpg', description: 'Prowl App landing page', name: 'Prowl Landing')
 
-reuben_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/reuben_with_pretzel.jpg', description: 'Reuben eats a pretzel.', name: 'Reuben')
+reuben_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/reuben_with_pretzel.jpg', description: 'Reuben eats a pretzel.', name: 'Reuben')
 
-micah_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/micah.jpg', description: 'He is little and super duper cute.', name: 'Micah')
+micah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/micah.jpg', description: 'He is little and super duper cute.', name: 'Micah')
 
-leah_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/leah_and_joshua.jpg', description: 'Leah helped organize a giant, amazing Parks Department event at NYU. Afterward she posed with me', name: 'Leah')
+leah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/leah_and_joshua.jpg', description: 'Leah helped organize a giant, amazing Parks Department event at NYU. Afterward she posed with me', name: 'Leah')
 
-atanas_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/atanas_and_joshua.jpg', description: 'Atanas and I went to the Griffith Observatory in Los Angeles.', name: 'Atanas and Joshua')
+atanas_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_joshua.jpg', description: 'Atanas and I went to the Griffith Observatory in Los Angeles.', name: 'Atanas and Joshua')
 
-ilana_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled nicely for the camera.', name: 'Atanas and Ilana')
+ilana_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled nicely for the camera.', name: 'Atanas and Ilana')
 
-andrew_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/andrew.jpg', description: 'Andrew is tall and stands aloof in Prospect Park.', name: 'Andrew')
+andrew_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/andrew.jpg', description: 'Andrew is tall and stands aloof in Prospect Park.', name: 'Andrew')
 
-mischka_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took a particular interest in my metal back scratcher one morning. I took full advantage of her curiousity by holding it just behind my camera so as to snap this rare direct photo her.', name: 'Mischka')
+mischka_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took a particular interest in my metal back scratcher one morning. I took full advantage of her curiousity by holding it just behind my camera so as to snap this rare direct photo her.', name: 'Mischka')
 
-barnaby_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Barnaby the betta fish died a few weeks ago. Atanas make this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
+barnaby_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Barnaby the betta fish died a few weeks ago. Atanas make this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
 
 mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
 
@@ -51,6 +51,9 @@ man_spyview = Photo.create(image_url: '../images/images_1x_2x/hobbies/photograph
 sweaty_pink = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sweaty_pink_autopaint.jpg', description: 'There was a huge pink Mack truck sitting sweating in the humidity on the way upper West Side one day.', name: 'Sweat Pink Mack truck')
 
 bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug_on_water_sky.jpg', description: 'Up becomes down and down becomes up as a water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
+
+
+blade_runner = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/blade_runner.jpg', description: 'A clothing store in the Garment District set up a rather surreal window display the made me think of Blade Runner.', name: 'Blade Runner')
 
 fruitstand = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/colorful_fruitstand.jpg', description: 'In Koreatown near 34th Street in Manhattan there sat a small and colorful stand filled with fruits.', name: 'Colorful Fruitstand')
 
@@ -172,6 +175,8 @@ photos.photos << south_brooklyn
 
 photos.photos << newyork
 
+photos.photos << blade_runner
+
 
 
 WebProject.delete_all
@@ -218,6 +223,17 @@ joshua.photos << beard_with_ice
 
 lani.photos << ilana_photo
 
+micah_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/micah_looks_down.jpg', description: 'Micah examines the act of looking down.', name: 'Micah looks down')
+
+micah_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/micah_almost_crawls.jpg', description: 'Micah smiles in anticipation of actually crawling one day.', name: 'Micah almost crawls')
+
+micah.photos << micah_photo2 << micah_photo3
+
+reuben_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/reuben_and_watermelon_horse.jpg', description: 'Reuben enjoys time with a horse named Watermelon.', name: 'Micah and a horse named watermelon')
+
+reuben_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_sleeping_reuben.jpg', description: 'Reuben naps on Atanas\'s shoulder after a day in the park.', name: 'Reuben Sleeps')
+
+reuben.photos << reuben_photo2 << reuben_photo3
 
 
 

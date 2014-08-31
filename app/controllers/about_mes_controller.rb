@@ -17,6 +17,10 @@ class AboutMesController < ApplicationController
   def show
     @about_me = AboutMe.all
     about_mes = {}
+    about_mes_length = @about_me.length
+    about_mes[:about_mes_length] = about_mes_length
+    me_counter = 0
+    about_mes[:about_mes] = []
     @about_me.each do |about_me|
     @about_me = {
       name: about_me.name,
@@ -34,7 +38,8 @@ class AboutMesController < ApplicationController
           counter += 1
       end
     end
-    about_mes[(about_me.id.to_s).to_sym] = @about_me
+    about_mes[:about_mes][me_counter] = @about_me
+    me_counter += 1
   end
     render json: about_mes
   end

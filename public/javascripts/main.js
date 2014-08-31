@@ -81,7 +81,7 @@ var AppRouter = Backbone.Router.extend({
     var myHeading = $('.about-me');
     var myHref = $('.aboutHref');
     router.prepareNewView(myHeading, myHref);
-    aboutMeView.renderAboutMeView();
+    aboutMeView.renderCollectionView();
   },
 
   myPorfolio: function() {
