@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get '/hobby/:interest'   => 'hobbies#show'
 
+  get '/abouts_mes/list' => 'abouts_mes#show'
+
   resources :hobbies, only: [:create, :destroy, :show, :update]
   resources :about_mes,     only: [:create, :destroy, :show, :index]
   resources :photos,    only: [:create, :destroy, :show, :index]

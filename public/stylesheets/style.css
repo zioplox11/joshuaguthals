@@ -18,7 +18,9 @@ body {
   font-family: gotham_light;
   text-align: center;
   color: rgba(210,60,90,.8);
+  background-color: rgba(253,  249, 247     ,1);
 }
+
 body {
     font-size: 16px;
     margin: 0;
@@ -63,34 +65,48 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  height: 470px;
-  width: 470px;
+  height: 370px;
+  width: 370px;
   margin-bottom: 20px;
   background-image: url('../images/images_1x_2x/welcome_images/joshua_by_well.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 6px;
+  border-radius: 4px;
   background-position: center;
  }
 
  .photography-photo, .hobby-photo{
   position: relative;
-  display: block;
+  display: inline;
   margin: 0 auto;
   height: 470px;
-  width: 470px;
+  width: 370px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 6px;
-  background-position: center;
+  border-radius: 4px;
  }
 
   img{
-    border-radius: 6px;
+    border-radius: 4px;
     max-width: 100%;
+    display: inline;
   }
 
+#hobby-block{
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(68, 107, 114  ,.06);
+}
+
+.thisHobby{
+
+}
+
+.protector{
+  background-color: rgba(253,  249, 247     ,1);
+}
 
 .nav-list li{
   position: relative;
@@ -107,7 +123,7 @@ body {
 
 #main-nav{
   position: relative;
-  display: block;
+  display: inline;
   height: 40px;
   width: 496px;
   margin: 0 auto;
@@ -116,18 +132,18 @@ body {
 
 #main-profile{
   position: relative;
-  display: block;
+  display: inline;
   height: 80px;
   width: 496px;
   margin: 0 auto;
 /*  border: 1px solid blue;*/
 }
 
-img:hover
+/*img:hover
 {
 opacity:0.55;
-filter:alpha(opacity=55); /* For IE8 and earlier */
-}
+filter:alpha(opacity=55);
+}*/
 
 #hOpener{
   margin-top: 14px;
@@ -208,14 +224,42 @@ p {
   font-weight: normal;
 }
 
+.contain-me{
+  display: inline-block;
+  vertical-align: top;
+  background-position: center;
+  width: 390px;
+}
 
-#p2 {
+
+.p2 {
   font-size: 12px;
   text-align: left;
-  margin-left:10px;
+/*  margin-left:10px;
   margin-bottom: 20px;
-  margin-top: 0px;
+  margin-top: 0px;*/
   font-weight: normal;
+  width: 370px;
+  /*display: inline;*/
+  overflow: scroll;
+  max-width: 370px;
+/*  position: relative;*/
+padding: 0;
+margin: 0 auto;
+display: inline-block;
+}
+
+
+.p3 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: normal;
+  width: 370px;
+  overflow: scroll;
+  max-width: 370px;
+padding: 0;
+margin: 0 auto;
+display: inline-block;
 }
 
 
@@ -230,7 +274,7 @@ p {
 }
 
 ul {
-max-width: 496px;
+/*max-width: 496px;*/
 margin: 0px auto;
 padding: 14px 0px 0px 0px;
 margin-left: 4px;

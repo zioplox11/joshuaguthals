@@ -30,6 +30,8 @@ atanas_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_famil
 
 ilana_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled nicely for the camera.', name: 'Atanas and Ilana')
 
+andrew_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/andrew.jpg', description: 'Andrew is tall and stands aloof in Prospect Park.', name: 'Andrew')
+
 mischka_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took a particular interest in my metal back scratcher one morning. I took full advantage of her curiousity by holding it just behind my camera so as to snap this rare direct photo her.', name: 'Mischka')
 
 barnaby_photo = Photo.create(image_url: 'public/images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Barnaby the betta fish died a few weeks ago. Atanas make this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
@@ -58,7 +60,7 @@ looming_cloud = Photo.create(image_url: '../images/images_1x_2x/hobbies/photogra
 
 red_buggy = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/red_buggy.jpg', description: 'I loved the bright red paint job on this old car.', name: 'Red Buggy')
 
-sun_dapple = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sundappled_flowers.jpg', description: 'Up in Cold Spring, New York, there are gorgeous flowers everywhere. These caught the sunlight in a very lovely way.', name: 'Sun dappled flowers')
+sun_dapple = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sundappled_flowers.jpg', description: 'In Cold Spring, New York, there are gorgeous flowers everywhere. These caught the sunlight in a very lovely way.', name: 'Sun dappled flowers')
 
 canoes = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/canoes_in_a_row.jpg', description: 'In Fort Collins, Colorado, next to a small lake, I noticed a line of canoes with such a compelling muted color pallet to them.', name: 'Colorful canoes')
 
@@ -174,7 +176,7 @@ photos.photos << newyork
 
 WebProject.delete_all
 
-webproject1 = WebProject.create(name: 'Prowl', description: 'A lesbian dating, sex, friendship, and social networking app. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couples expecting children -- we are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ')
+webproject1 = WebProject.create(name: 'Prowl', description: 'A lesbian dating, sex, friendship, and social networking app. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- we are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ')
 
 webproject1.photos << prowl_photo
 
@@ -186,17 +188,17 @@ barnaby = AboutMe.create(name: 'Barnaby', description: 'Barnaby the betta fish l
 
 mischka = AboutMe.create(name: 'Mischka', description: 'I adopted this little sprite of a cat as a gift from Reuben\'s moms. She was terribly shy at first, never even leaving the corner of the closet. As the years passed, she became friendlier and more confident. It helped that Atanas has great skill with strings and Mischka truly loves strings.')
 
-micah = AboutMe.create(name: 'Micah', description: 'Micah is Reuben\'s little brother, and is about four months old. He makes utterly adorable facial expression and some rather endearing gurgles and blurbles as well.')
+micah = AboutMe.create(name: 'Micah', description: 'Micah is Reuben\'s little brother, and is about five months old. He makes utterly adorable facial expressions and some rather endearing gurgles and blurbles as well.')
 
-leah = AboutMe.create(name: 'Leah', description: '')
+leah = AboutMe.create(name: 'Leah', description: 'In my experience, Leah is as old the wind and rain. Not in human years ... rather I mean that I have known her for so long that I cannot recall a time prior to her existence. In real life, she works to beautify NYC\'s parks.')
 
-atanas = AboutMe.create(name: 'Atanas', description: '')
+atanas = AboutMe.create(name: 'Atanas', description: 'Atanas is a highly talented visual artist who seemingly cannot create something that is not minimal, progressive, and lovely. He shares a very small home with me and Mischka in Clinton Hill. A lot of his time is spent reading design blogs and applying what he has read to his own usually digital creations.')
 
-andrew = AboutMe.create(name: 'Andrew', description: '')
+andrew = AboutMe.create(name: 'Andrew', description: 'A mathematically and creatively gifted humanoid who goes by the name Andrew. Andrew periodically drags me into various tech oriented experiences such as a year long C++ course at NYU and an immersive program in web development at General Assembly. He also is an astute host who always entertains.')
 
-joshua = AboutMe.create(name: 'Joshua', description: '')
+joshua = AboutMe.create(name: 'Joshua', description: 'This a wet and snowy photo of me. My beard and eyelashes were heavy with ice. Given that this entire website is about my life I think I will leave it at that.')
 
-lani = AboutMe.create(name: 'Ilana', description: '')
+lani = AboutMe.create(name: 'Ilana', description: 'Lani is the musically gifted sister of Leah. She pops in and out of our lives at unexpected moments, almost always with an infectious liveliness and a willingness to take part in whatever adventures have struck our fancies. Otherwise she is probably singing something somewhere.')
 
 reuben.photos << reuben_photo
 
@@ -210,9 +212,9 @@ leah.photos << leah_photo
 
 atanas.photos << atanas_photo
 
-# andrew.photos << andrew_photo
+andrew.photos << andrew_photo
 
-# joshua.photos << joshua_photo
+joshua.photos << beard_with_ice
 
 lani.photos << ilana_photo
 

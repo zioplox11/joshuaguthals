@@ -15,7 +15,28 @@ class AboutMesController < ApplicationController
   end
 
   def show
-    render json: @about_me
+    @about_me = AboutMe.all
+    about_mes = {}
+    @about_me.each do |about_me|
+    @about_me = {
+      name: about_me.name,
+      description: about_me.description
+    }
+    photo_length = about_me.photos.length
+    @about_me[:photo_length] = photo_length
+    if (photo_length > 0)
+      counter = 0
+      @about_me[:photos] = []
+      photo_length.times do
+          @about_me[:photos][counter]={}
+          @about_me[:photos][counter][:photo] = about_me.photos[counter].image_url
+          @about_me[:photos][counter][:photo_des] = about_me.photos[counter].description
+          counter += 1
+      end
+    end
+    about_mes[(about_me.id.to_s).to_sym] = @about_me
+  end
+    render json: about_mes
   end
 
   def destroy

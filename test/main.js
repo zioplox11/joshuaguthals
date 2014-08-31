@@ -7,8 +7,8 @@ var AppRouter = Backbone.Router.extend({
 
   initialize: function(){
     router = this;
-    hobbies = new Hobbies();
-    hobbiesView = new HobbiesView({model: hobbies, el: $('#main-profile')});
+    photography = new Hobbies();
+    photosView = new HobbiesView({model: photography, el: $('#main-profile')});
     favouriteThings = new FavouriteThings();
     favouriteThingsView = new FavouriteThingsView({model: favouriteThings, el: $('#main-profile')});
     aboutMe = new AboutMe();
@@ -16,7 +16,7 @@ var AppRouter = Backbone.Router.extend({
   },
 
   routes: {
-    "hobbies"              : "myHobbies",
+    "photography"              : "myPhotos",
     "aboutMe"              :   "myAboutMe",
     "portfolio"           :   "myPorfolio",
     "favouriteThings"  : "myFavouriteThings",
@@ -31,11 +31,11 @@ var AppRouter = Backbone.Router.extend({
     thisHref.css('color', 'rgba(210,60,90,0.8)');
   },
 
-  myHobbies: function(){
-    var myHeading = $('.hobbies');
-    var myHref = $('.hobbyHref');
+  myPhotos: function(){
+    var myHeading = $('.photography');
+    var myHref = $('.photoHref');
     router.prepareNewView(myHeading, myHref);
-    hobbiesView.renderHobbiesView();
+    photosView.renderHobbiesView();
   },
 
   clearClicks: function(){
@@ -52,13 +52,6 @@ var AppRouter = Backbone.Router.extend({
   },
 
   myPorfolio: function() {
-  },
-
-  myFavouriteThings: function() {
-    var myHeading = $('.favourite-things');
-    var myHref = $('.faveHref');
-    router.prepareNewView(myHeading, myHref);
-    favouriteThingsView.renderFavouriteThingsView();
   }
 
 });
