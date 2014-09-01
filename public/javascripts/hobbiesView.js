@@ -34,7 +34,7 @@ var HobbiesView = Backbone.View.extend({
   // },
 
   showDescription: function(event){
-    $(event.target).css("border", "1px solid rgba(54,  54,  180,.6)").fadeIn(200);
+    $(event.target).css("border", "15px solid green").fadeIn(200);
     $(event.target).siblings('.cabbage-kid').children().fadeIn(600);
   },
 
