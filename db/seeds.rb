@@ -249,6 +249,46 @@ atanas_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/a
 
 atanas.photos << atanas_photo2 << atanas_photo3
 
+
+lani_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/climbing_gym_friends.jpg', description: 'Lani joined us for some indoor rock climbing.', name: 'lani at climbing gym')
+
+lani_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/speedy_romeo_pizza_friends.jpg', description: 'Lani joined us for tasty pizza at Speedy Romeo at a less bearded time of my life.', name: 'Speedy Romeo Pizza')
+
+lani.photos << lani_photo2 << lani_photo3
+
+
+
+andrew_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/jazzy_andrew.jpg', description: 'Andrew with a beard and hat and an Afterlight filter that makes him look jazzy!', name: 'andrew looks jazzy')
+
+andrew_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/andrew_at_toms_restaurant.jpg', description: 'Andrew somberly enjoys a mug of coffee at Tom\'s Restaurant.', name: 'Andrews at Tom\'s Restaurant.')
+
+andrew.photos << andrew_photo2 << andrew_photo3
+
+
+
+leah_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/leah_reads_to_reuben.jpg', description: 'Leah and Reuben snuggle up for a good book.', name: 'Leah reads to Reuben')
+
+leah_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/leah_on_carousel.jpg', description: 'Leah enjoys quality time at the carousel.', name: 'Leah on Carousel')
+
+leah.photos << leah_photo2 << leah_photo3
+
+
+
+
+
+
+
+mischka_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka_grins.jpg', description: 'Mischka grins in a fluffy way.', name: 'Mischka grins in a fluffy way')
+
+mischka_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka_reclines_on_bed.jpg', description: 'Mischka hangs out on the bed imploringly.', name: 'Mischka at rest.')
+
+mischka_photo4 = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka_right_close.jpg', description: 'Mischka is smooshed.', name: 'Mischka right up close')
+
+mischka.photos << mischka_photo4 << mischka_photo3
+
+
+
+
 barnaby = AboutMe.create(name: 'Barnaby', description: 'Barnaby the betta fish lived for 44 seemingly happy weeks before suddenly dying. We are not sure why. As of now we have not replaced him as we are not sure we will have fish anymore.')
 
 barnaby.photos << barnaby_photo
