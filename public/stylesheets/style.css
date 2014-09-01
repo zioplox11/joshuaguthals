@@ -12,6 +12,13 @@ src: url(../fonts/Gotham/Gotham-Light.otf);
 }
 
 
+@font-face
+{
+font-family: gotham_bold;
+src: url(../fonts/Gotham/Gotham-Medium.otf);
+}
+
+
 html,
 body {
   font-size: 100%;
@@ -139,6 +146,13 @@ body {
 /*  border: 1px solid blue;*/
 }
 
+.colorTime{
+  background-color: rgba(109 ,189, 217, .08 );
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+}
+
 /*img:hover
 {
 opacity:0.55;
@@ -192,6 +206,7 @@ h2 {
   margin: 0px;
 }
 
+
 #email{
   font-size: 15px;
 }
@@ -203,7 +218,6 @@ h5 {
   font-size: 14px;
   padding: 0px 0px 0px 0px;
   margin: 0 auto;
-
 }
 
 h3 {

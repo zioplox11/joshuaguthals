@@ -22,23 +22,23 @@ prowl_photo = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/p
 
 reuben_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/reuben_with_pretzel.jpg', description: 'Reuben eats a pretzel.', name: 'Reuben')
 
-micah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/micah.jpg', description: 'He is little and super duper cute.', name: 'Micah')
+micah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/micah.jpg', description: 'Micah has quite large and very expressive eyes.', name: 'Micah')
 
-leah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/leah_and_joshua.jpg', description: 'Leah helped organize a giant, amazing Parks Department event at NYU. Afterward she posed with me', name: 'Leah')
+leah_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/leah_and_joshua.jpg', description: 'Leah helped organize a giant, amazing Parks Department event at NYU. Afterward she posed with me.', name: 'Leah')
 
 atanas_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_joshua.jpg', description: 'Atanas and I went to the Griffith Observatory in Los Angeles.', name: 'Atanas and Joshua')
 
-ilana_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled nicely for the camera.', name: 'Atanas and Ilana')
+ilana_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_ilana.jpg', description: 'One snowy night in the Upper West Side, Lani and Atanas smiled for the camera.', name: 'Atanas and Ilana')
 
 andrew_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/andrew.jpg', description: 'Andrew is tall and stands aloof in Prospect Park.', name: 'Andrew')
 
-mischka_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took a particular interest in my metal back scratcher one morning. I took full advantage of her curiousity by holding it just behind my camera so as to snap this rare direct photo her.', name: 'Mischka')
+mischka_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka.jpg', description: 'Mischka took interest in my metal back scratcher one morning. Taking advantage of her curiousity, I held it behind my camera to snap this rare direct photo her.', name: 'Mischka')
 
-barnaby_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Barnaby the betta fish died a few weeks ago. Atanas make this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
+barnaby_photo = Photo.create(image_url: '../images/images_1x_2x/friends_family/rip_barnaby.jpg', description: 'Atanas made this RIP image based on a photo from Barnaby\'s better days.', name: 'RIP Barnaby')
 
-mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery', name: 'Mud run')
+mud_run = Photo.create(image_url: '../images/images_1x_2x/hobbies/mudrun.jpg', description: 'My beard is really quite heavy with filth, silt, dirt, and drudgery.', name: 'Mud run')
 
-beard_with_ice = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_with_ice.jpg', description: 'I walked for a solid hour throughout Park Slope in the heavy snow. I ended up with a very icy beard.', name: 'Beard With Ice')
+beard_with_ice = Photo.create(image_url: '../images/images_1x_2x/hobbies/beard_with_ice.jpg', description: 'I walked for a solid hour through Park Slope in heavy snow, ending up with a very icy beard.', name: 'Beard With Ice')
 
 my_beard = Photo.create(image_url: '../images/images_1x_2x/hobbies/my_beard.jpg', description: 'I spend an absurd amount of time grooming and tending to my beard.', name: 'My beard')
 
@@ -46,24 +46,24 @@ beard_google_glass = Photo.create(image_url: '../images/images_1x_2x/hobbies/bea
 
 hiv_awareness = Photo.create(image_url: '../images/images_1x_2x/hobbies/hiv_awareness_event.jpg', description: 'My former co-worker, Chloe, and I went to an HIV prevention and planning event as the new mayor was elected.', name: 'HIV Awareness Event')
 
-man_spyview = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/man_spyview.jpg', description: 'Up near Julliard a man checked out a sign. It felt like I was eavesdropping on his thoughts.', name: 'Man viewed from above')
+man_spyview = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/man_spyview.jpg', description: 'Near Julliard a man checked out a sign. It felt like I was eavesdropping on his thoughts.', name: 'Man viewed from above')
 
-sweaty_pink = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sweaty_pink_autopaint.jpg', description: 'There was a huge pink Mack truck sitting sweating in the humidity on the way upper West Side one day.', name: 'Sweat Pink Mack truck')
+sweaty_pink = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sweaty_pink_autopaint.jpg', description: 'There was a huge pink Mack truck sitting sweating in the humidity on the upper West Side one day.', name: 'Sweat Pink Mack truck')
 
-bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug_on_water_sky.jpg', description: 'Up becomes down and down becomes up as a water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
+bug_on_water = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/bug_on_water_sky.jpg', description: 'A water bug skates the surface of a pond in the Denver Botanical Gardens.', name: 'Bug on Sky')
 
 
 blade_runner = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/blade_runner.jpg', description: 'A clothing store in the Garment District set up a rather surreal window display the made me think of Blade Runner.', name: 'Blade Runner')
 
-fruitstand = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/colorful_fruitstand.jpg', description: 'In Koreatown near 34th Street in Manhattan there sat a small and colorful stand filled with fruits.', name: 'Colorful Fruitstand')
+fruitstand = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/colorful_fruitstand.jpg', description: 'In Koreatown near 34th Street there sat a small and colorful stand filled with fruits.', name: 'Colorful Fruitstand')
 
-greenball = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/little_green_frog_ball.jpg', description: 'One summery day in Prospect Park I notice a grinning green frog ball in the dust near a group of picnickers.', name: 'Grinning Frog Ball')
+greenball = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/little_green_frog_ball.jpg', description: 'One summery day in Prospect Park I noticed a grinning green frog ball in the dust near a group of picnickers.', name: 'Grinning Frog Ball')
 
 looming_cloud = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/looming_cloud_hedge.jpg', description: 'The clouds were rolling in above the hedges of Dia Beacon. It made me think of Alice In Wonderland', name: 'Looming Cloud Above Hedge')
 
 red_buggy = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/red_buggy.jpg', description: 'I loved the bright red paint job on this old car.', name: 'Red Buggy')
 
-sun_dapple = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sundappled_flowers.jpg', description: 'In Cold Spring, New York, there are gorgeous flowers everywhere. These caught the sunlight in a very lovely way.', name: 'Sun dappled flowers')
+sun_dapple = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/sundappled_flowers.jpg', description: 'In Cold Spring, New York, there are gorgeous flowers everywhere. These were caught in dappled sunlight.', name: 'Sun dappled flowers')
 
 canoes = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/canoes_in_a_row.jpg', description: 'In Fort Collins, Colorado, next to a small lake, I noticed a line of canoes with such a compelling muted color pallet to them.', name: 'Colorful canoes')
 
@@ -71,11 +71,11 @@ sleeping_atanas = Photo.create(image_url: '../images/images_1x_2x/hobbies/photog
 
 looking_down = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/looking_down_subway.jpg', description: 'This woman was angry as she read a text message. There was something sturdy and sad about her.', name: 'Angry Text')
 
-empire_state_on_top = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/top_of_empire_state.jpg', description: 'This view looking up at Empire State made me think of MadMax or Return of the Jedi ... something desert like, futuristic, and perhaps violent.', name: 'Empire State Up Top')
+empire_state_on_top = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/top_of_empire_state.jpg', description: 'This view looking up at Empire State made me think of Mad Max or Return of the Jedi ... futuristic, deserted, and perhaps violent.', name: 'Empire State Up Top')
 
 workers_flourescent = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/workers_flourescent.jpg', description: 'In the quiet splendor of Cold Spring, New York, a little haven of loudness followed us from NYC. This construction was going on next to our bed and breakfast\'s window', name: 'South Brooklyn escape')
 
-burger_klein = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/burger_klein.jpg', description: 'A burger shop near a church in the East Village. Something felt iconoclastic.', name: 'Burger Klein')
+burger_klein = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/burger_klein.jpg', description: 'A burger shop near a church in the East Village. It felt mildly iconoclastic.', name: 'Burger Klein')
 
 newyork = Photo.create(image_url: '../images/images_1x_2x/hobbies/photography/newyork_newyork.jpg', description: 'I was at an HIV prevention conference in a downtown Manhattan highrise and the view was stunning.', name: 'New York New York')
 
@@ -111,7 +111,7 @@ sports = Hobby.create(finder: 'sports', name: 'Triathlons/Mud runs', description
 
 songs = Hobby.create(finder: 'songs', name: 'Song-writing and general music-making', description: '' )
 
-photos = Hobby.create(finder: 'photography', name: 'Digital photography', description: 'With the constant improvements of Instagram, Afterlight, VSCOcam, and the like, it has become increasingly enjoyable to take, edit, and share photos with my iPhone. Here is a random sampler of the photos I have taken in recent months.' )
+photos = Hobby.create(finder: 'photography', name: 'Digital photography', description: 'With the constant improvements of Instagram, Afterlight, VSCOcam, and the like, it has become increasingly enjoyable to take photos with my iPhone. Here is a random sampler.' )
 
 beard = Hobby.create(finder: 'beard', name: 'Beard management', description: 'Last summer I decided to take the plunge and start growing out my beard. I bought a great beard grooming kit and began brushing and oiling my beard morning and evening and taking biotin which purportedly strengthens human hair. I also started getting professional beard trims from Duval at <a href="https://www.harrys.com/cornershop" target="_blank">Harrys Corner Shop</a>. Before I knew it, many people began stopping me on the streets, the subway, at restaurants, etc., asking me how I got such a great, healthy beard! So I guess all my grooming efforts really worked.')
 
@@ -187,10 +187,10 @@ webproject1.photos << prowl_photo
 
 AboutMe.delete_all
 
-joshua = AboutMe.create(name: 'Joshua AKA me', description: 'Here are some actions shots of me. Though I do actually spend far too much time in bed coding or watching Netflix on my computer.')
+joshua = AboutMe.create(name: 'Joshua AKA me', description: 'Here are some actions shots of me, though I do also spend much time in bed coding or watching Netflix on my computer.')
 
 
-reuben = AboutMe.create(name: 'Reuben', description: 'Reuben is my older biological son. He is being raised by his moms here in Brooklyn. He is bright, witty, and 3 years old.')
+reuben = AboutMe.create(name: 'Reuben', description: 'Reuben, my older biological son, is growing up with his moms here in Brooklyn. He is bright, witty, and 3 years old.')
 
 atanas = AboutMe.create(name: 'Atanas', description: 'Atanas is a highly talented visual artist who seemingly cannot create something that is not minimal, progressive, and lovely. He shares a very small home with me and Mischka in Clinton Hill. A lot of his time is spent reading design blogs and applying what he has read to his own usually digital creations.')
 
@@ -201,7 +201,7 @@ mischka = AboutMe.create(name: 'Mischka', description: 'I adopted this little sp
 lani = AboutMe.create(name: 'Ilana', description: 'Lani is the musically gifted sister of Leah. She pops in and out of our lives at unexpected moments, almost always with an infectious liveliness and a willingness to take part in whatever adventures have struck our fancies. Otherwise she is probably singing something somewhere.')
 
 
-leah = AboutMe.create(name: 'Leah', description: 'In my experience, Leah is as old the wind and rain. Not in human years ... rather I mean that I have known her for so long that I cannot recall a time prior to her existence. In real life, she works to beautify NYC\'s parks.')
+leah = AboutMe.create(name: 'Leah', description: 'In my experience, Leah is as old the sun, wind, and rain. Not in human years ... rather I mean that I have known her for so long that I cannot recall a time prior to her existence. In real life, she works day-by-day to beautify NYC\'s parks.')
 
 andrew = AboutMe.create(name: 'Andrew', description: 'A mathematically and creatively gifted humanoid who goes by the name Andrew. Andrew periodically drags me into various tech oriented experiences such as a year long C++ course at NYU and an immersive program in web development at General Assembly. He also is an astute host who always entertains.')
 
@@ -236,7 +236,7 @@ reuben_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/a
 reuben.photos << reuben_photo2 << reuben_photo3
 
 
-joshua_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/joshua_and_gorilla.jpg', description: 'I had a good time hanging with the gorilla at the Koons exhibit.', name: 'Joshua and Gorilla')
+joshua_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/joshua_and_gorilla.jpg', description: 'I had a good time hanging out with the gorilla at the Koons exhibit.', name: 'Joshua and Gorilla')
 
 joshua_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/joshua_in_tree.jpg', description: 'There was a big strong tree in the backyard of my sister\'s house in Fort Collins.', name: 'Joshua climbs a tree')
 
@@ -252,7 +252,7 @@ atanas.photos << atanas_photo2 << atanas_photo3
 
 lani_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/climbing_gym_friends.jpg', description: 'Lani joined us for some indoor rock climbing.', name: 'lani at climbing gym')
 
-lani_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/speedy_romeo_pizza_friends.jpg', description: 'Lani joined us for tasty pizza at Speedy Romeo at a less bearded time of my life.', name: 'Speedy Romeo Pizza')
+lani_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/speedy_romeo_pizza_friends.jpg', description: 'We had tasty pizza with Lani at Speedy Romeo during a less bearded time of my life.', name: 'Speedy Romeo Pizza')
 
 lani.photos << lani_photo2 << lani_photo3
 

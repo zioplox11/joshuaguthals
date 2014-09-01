@@ -87,22 +87,26 @@
 <hr width='462px'>
 </br>
 
-    <div class='allAboutMes'>
+<div class="colorTime">
+
+    <div class='allAboutMes'><div class='protector'>
     <h2 class='tbaa'>My New York City family</h2></br>
-    <p class='p3'>I have a non-traditional, very modern family. Below you meet my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. Together this rag-tag group of creatures make up my immediate NYC family.</p></br></br>
+    <p class='p3'>I have a slightly non-traditional, very modern family. Please meet my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. </p></br></br></div>
 
     </div>
     <div class="allAboutMeCollection"></div>
+
+    </div>
 
 </script>
 
 
 <script id="view_about_me" type="text/template">
 
-
+      <br>
       <% for (var i = 0; i < about_mes_length; i++ ) { %>
       <h2 class="tbaa"><%= about_mes[i].name %></h2>
-      <p class='p3'><%= about_mes[i].description %></p><br><br>
+      <p class='p3'><br><%= about_mes[i].description %></p><br><br>
 
           <% for (var z = 0; z < about_mes[i].photo_length; z++ ) { %>
           <div class='contain-me'>
@@ -110,7 +114,10 @@
               <div class='cabbage-kid'><p class='p2' style="display:none;"><%= about_mes[i].photos[z].photo_des %></p><br><br><br><br></div>
           </div>
           <% } %>
+          </div>
 
+          <hr width='1062px'>
+          <br>
 
 
       <% } %>
