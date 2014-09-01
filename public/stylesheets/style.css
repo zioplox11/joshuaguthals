@@ -274,7 +274,7 @@ p {
 }
 
 .skinny-hr{
-  width: 462px;
+  max-width: 33%;
 }
 
 .wide-hr{
@@ -408,8 +408,10 @@ padding: 10px;
 
 
 .skinny-hr{
-  max-width: 362px;
+  max-width: 60%;
 }
+
+
 
 }
 
@@ -476,9 +478,8 @@ max-width: 296px;
 padding: 10px;
 }
 
-
 .skinny-hr{
-  max-width: 222px;
+  max-width: 86%;
 }
 
 
