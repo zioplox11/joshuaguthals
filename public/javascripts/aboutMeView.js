@@ -10,6 +10,8 @@ var AboutMeView = Backbone.View.extend({
 
   events: {
     "click .about-me" : "renderCollectionView",
+    "mouseover .cabbage": 'showDescription',
+    "mouseout .photos": 'hideDescription',
   },
 
   renderAboutMeView: function(){
@@ -17,6 +19,22 @@ var AboutMeView = Backbone.View.extend({
     this.$el.empty();
     this.$el.html(strangeTemplateGlitch(this.model.toJSON()));
     this.$el.show();
+  },
+
+  backToTop: function(){
+    $('html, body').animate({
+          scrollTop: $("#hOpener").offset().top
+        }, 1400);
+  },
+
+  showDescription: function(event){
+    $(event.target).css("border", "1px solid rgba(54,  54,  180,.6)").fadeIn(200);
+    $(event.target).siblings('.cabbage-kid').children().fadeIn(600);
+  },
+
+  hideDescription: function(event){
+    $(event.target).css("border", "1px solid rgba(127,  98,  124, .1 )");
+    $(event.target).siblings('.cabbage-kid').children().fadeOut();
   },
 
   renderCollectionView: function(){
@@ -37,8 +55,10 @@ var AboutMeView = Backbone.View.extend({
         var pigeon = $(".allAboutMes");
         var getPosting = $(".allAboutMeCollection");
         getPosting.html(aboutMeWorld(aboutMeList.toJSON()[0]));
-        getPosting.show();
+        getPosting.hide();
         pigeon.append(getPosting);
+        getPosting.fadeIn(1000);
+        that.backToTop();
     });
   }
 

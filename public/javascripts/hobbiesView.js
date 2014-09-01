@@ -17,6 +17,9 @@ var HobbiesView = Backbone.View.extend({
   events: {
     // "click .photography" : "displayHobby",
     "click .photography": "renderPhotosView",
+    "mouseover .cabbage": 'showDescription',
+    "mouseout .photos": 'hideDescription',
+    "click .back-to-top": 'backToTop',
     // "click .krav-maga" : "renderKravMagaView",
     // "click .song-writing" : "renderSongWritingView",
     // "click .sports" : "renderSportsView",
@@ -30,6 +33,22 @@ var HobbiesView = Backbone.View.extend({
   //   this.$el.html(strangeTemplateGlitch(this.model.toJSON()));
   // },
 
+  showDescription: function(event){
+    $(event.target).css("border", "1px solid rgba(54,  54,  180,.6)").fadeIn(200);
+    $(event.target).siblings('.cabbage-kid').children().fadeIn(600);
+  },
+
+  hideDescription: function(event){
+    $(event.target).css("border", "1px solid rgba(127,  98,  124, .1 )");
+    $(event.target).siblings('.cabbage-kid').children().fadeOut();
+  },
+
+  backToTop: function(){
+    $('html, body').animate({
+          scrollTop: $("#hOpener").offset().top
+        }, 1400);
+  },
+
   displayHobby: function(finder){
     var viewAHobby =  _.template($("#view_photos").html());
     var that = this;
@@ -38,8 +57,11 @@ var HobbiesView = Backbone.View.extend({
     myHobby.fetch().complete(function(){
         $(".thisHobby").remove();
         that.$viewEl = $("<div class='thisHobby'>");
-        that.$viewEl.html(viewAHobby(myHobby.toJSON()));
-        that.$el.append(that.$viewEl);
+        var bob = that.$viewEl.html(viewAHobby(myHobby.toJSON()));
+        bob.hide();
+        that.$el.append(bob);
+        bob.fadeIn(1000);
+        that.backToTop();
     });
   },
 

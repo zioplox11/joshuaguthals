@@ -30,6 +30,7 @@ var AppRouter = Backbone.Router.extend({
     var myHref = $('.photoHref');
     router.prepareNewView(myHeading, myHref);
     photosView.renderHobbiesView();
+
   },
 
   clearClicks: function(){

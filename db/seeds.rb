@@ -187,27 +187,27 @@ webproject1.photos << prowl_photo
 
 AboutMe.delete_all
 
+joshua = AboutMe.create(name: 'Joshua AKA me', description: 'Here are some actions shots of me. Though I do actually spend far too much time in bed coding or watching Netflix on my computer.')
+
+
 reuben = AboutMe.create(name: 'Reuben', description: 'Reuben is my older biological son. He is being raised by his moms here in Brooklyn. He is bright, witty, and 3 years old.')
-
-barnaby = AboutMe.create(name: 'Barnaby', description: 'Barnaby the betta fish lived for 44 seemingly happy weeks before suddenly dying. We are not sure why. As of now we have not replaced him as we are not sure we will have fish anymore.')
-
-mischka = AboutMe.create(name: 'Mischka', description: 'I adopted this little sprite of a cat as a gift from Reuben\'s moms. She was terribly shy at first, never even leaving the corner of the closet. As the years passed, she became friendlier and more confident. It helped that Atanas has great skill with strings and Mischka truly loves strings.')
-
-micah = AboutMe.create(name: 'Micah', description: 'Micah is Reuben\'s little brother, and is about five months old. He makes utterly adorable facial expressions and some rather endearing gurgles and blurbles as well.')
-
-leah = AboutMe.create(name: 'Leah', description: 'In my experience, Leah is as old the wind and rain. Not in human years ... rather I mean that I have known her for so long that I cannot recall a time prior to her existence. In real life, she works to beautify NYC\'s parks.')
 
 atanas = AboutMe.create(name: 'Atanas', description: 'Atanas is a highly talented visual artist who seemingly cannot create something that is not minimal, progressive, and lovely. He shares a very small home with me and Mischka in Clinton Hill. A lot of his time is spent reading design blogs and applying what he has read to his own usually digital creations.')
 
-andrew = AboutMe.create(name: 'Andrew', description: 'A mathematically and creatively gifted humanoid who goes by the name Andrew. Andrew periodically drags me into various tech oriented experiences such as a year long C++ course at NYU and an immersive program in web development at General Assembly. He also is an astute host who always entertains.')
+micah = AboutMe.create(name: 'Micah', description: 'Micah is Reuben\'s little brother, and is about five months old. He makes utterly adorable facial expressions and some rather endearing gurgles and blurbles as well.')
 
-joshua = AboutMe.create(name: 'Joshua', description: 'This a wet and snowy photo of me. My beard and eyelashes were heavy with ice. Given that this entire website is about my life I think I will leave it at that.')
+mischka = AboutMe.create(name: 'Mischka', description: 'I adopted this little sprite of a cat as a gift from Reuben\'s moms. She was terribly shy at first, never even leaving the corner of the closet. As the years passed, she became friendlier and more confident. It helped that Atanas has great skill with strings and Mischka truly loves strings.')
 
 lani = AboutMe.create(name: 'Ilana', description: 'Lani is the musically gifted sister of Leah. She pops in and out of our lives at unexpected moments, almost always with an infectious liveliness and a willingness to take part in whatever adventures have struck our fancies. Otherwise she is probably singing something somewhere.')
 
-reuben.photos << reuben_photo
 
-barnaby.photos << barnaby_photo
+leah = AboutMe.create(name: 'Leah', description: 'In my experience, Leah is as old the wind and rain. Not in human years ... rather I mean that I have known her for so long that I cannot recall a time prior to her existence. In real life, she works to beautify NYC\'s parks.')
+
+andrew = AboutMe.create(name: 'Andrew', description: 'A mathematically and creatively gifted humanoid who goes by the name Andrew. Andrew periodically drags me into various tech oriented experiences such as a year long C++ course at NYU and an immersive program in web development at General Assembly. He also is an astute host who always entertains.')
+
+
+
+reuben.photos << reuben_photo
 
 mischka.photos << mischka_photo
 
@@ -235,5 +235,22 @@ reuben_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/a
 
 reuben.photos << reuben_photo2 << reuben_photo3
 
+
+joshua_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/joshua_and_gorilla.jpg', description: 'I had a good time hanging with the gorilla at the Koons exhibit.', name: 'Joshua and Gorilla')
+
+joshua_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/joshua_in_tree.jpg', description: 'There was a big strong tree in the backyard of my sister\'s house in Fort Collins.', name: 'Joshua climbs a tree')
+
+joshua.photos << joshua_photo2 << joshua_photo3
+
+
+atanas_photo2 = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_on_street.jpg', description: 'Atanas struts his stuff on 5th ave.', name: 'Atanas on street')
+
+atanas_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/atanas_and_mini-atanas.jpg', description: 'Atanas created the ultimate 3-D selfie of himself.', name: 'Atanas and his mini friend')
+
+atanas.photos << atanas_photo2 << atanas_photo3
+
+barnaby = AboutMe.create(name: 'Barnaby', description: 'Barnaby the betta fish lived for 44 seemingly happy weeks before suddenly dying. We are not sure why. As of now we have not replaced him as we are not sure we will have fish anymore.')
+
+barnaby.photos << barnaby_photo
 
 

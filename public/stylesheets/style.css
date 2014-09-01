@@ -65,13 +65,13 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  height: 370px;
-  width: 370px;
-  margin-bottom: 20px;
+  height: 372px;
+  width: 372px;
+  margin-bottom: -6px;
   background-image: url('../images/images_1x_2x/welcome_images/joshua_by_well.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 4px;
+  border-radius: 2px;
   background-position: center;
  }
 
@@ -80,15 +80,15 @@ body {
   display: inline;
   margin: 0 auto;
   height: 470px;
-  width: 370px;
+  width: 372px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 4px;
+  border-radius: 2px;
  }
 
   img{
-    border-radius: 4px;
+    border-radius: 2px;
     max-width: 100%;
     display: inline;
   }
@@ -146,6 +146,7 @@ filter:alpha(opacity=55);
 }*/
 
 #hOpener{
+  padding-top: 30px;
   margin-top: 14px;
   font-size: 29px;
 }
@@ -231,22 +232,47 @@ p {
   width: 390px;
 }
 
+.back-to-top{
+  cursor: pointer;
+  background-color: rgba(90, 111 ,186   ,1);
+  font-size: 16px;
+  margin-top: 14px;
+  border-radius: 3px;
+  color: rgba(200, 200, 200, 1);
+  letter-spacing: .2em;
+}
+
+.back-to-top:hover{
+  background-color: rgba(235 , 106, 129  ,1);
+  color: rgba(33,33,33,1);
+}
+
+.photos {
+  font-size: 12px;
+  border: 1px solid rgba(127,  98,  124, .1 );
+  font-weight: normal;
+  width: 372px;
+  height: 372px;
+  max-width: 372px;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.cabbage-kid{
+  height: 50px;
+}
 
 .p2 {
   font-size: 12px;
   text-align: left;
-/*  margin-left:10px;
-  margin-bottom: 20px;
-  margin-top: 0px;*/
   font-weight: normal;
-  width: 370px;
-  /*display: inline;*/
+  width: 372px;
   overflow: scroll;
-  max-width: 370px;
-/*  position: relative;*/
-padding: 0;
-margin: 0 auto;
-display: inline-block;
+  max-width: 372px;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 
@@ -333,7 +359,7 @@ display: block;
   #hOpener{
     margin: 0 auto;
     padding: 0 auto;
-    margin-bottom: 15px;quotes: ;
+    margin-bottom: 15px;
     font-size: 2em;
   }
 }

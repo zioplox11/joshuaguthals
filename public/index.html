@@ -89,7 +89,7 @@
 
     <div class='allAboutMes'>
     <h2 class='tbaa'>My New York City family</h2></br>
-    <p class='p3'>I have a slightly non-traditional, very modern family. Below you will see pictures of my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. Together this rag-tag group of creatures make up my immediate NYC family.</p></br></br>
+    <p class='p3'>I have a non-traditional, very modern family. Below you meet my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. Together this rag-tag group of creatures make up my immediate NYC family.</p></br></br>
 
     </div>
     <div class="allAboutMeCollection"></div>
@@ -106,8 +106,8 @@
 
           <% for (var z = 0; z < about_mes[i].photo_length; z++ ) { %>
           <div class='contain-me'>
-              <img class='p2' src=<%= about_mes[i].photos[z].photo %>><br>
-              <p class='p2'><%= about_mes[i].photos[z].photo_des %></p><br><br>
+              <img class='photos cabbage' src=<%= about_mes[i].photos[z].photo %>><br>
+              <div class='cabbage-kid'><p class='p2' style="display:none;"><%= about_mes[i].photos[z].photo_des %></p><br><br><br><br></div>
           </div>
           <% } %>
 
@@ -132,13 +132,15 @@
 
             <% for (var i = 0; i < photo_length; i++ ) { %>
           <div class='contain-me'>
-              <img class='p2' src=<%= photos[i]['photo'] %>><br>
-              <p class='p2'><%= photos[i]['photo_des'] %></p><br><br>
+              <img class='photos cabbage' src=<%= photos[i]['photo'] %>><br>
+              <div class='cabbage-kid'><p class='p2' style="display:none;"><%= photos[i]['photo_des'] %></p><br><br><br><br></div>
           </div>
 
             <% } %>
 </div>
-      <button class="tbaaa">Use this button later</button>
+      <br><br>
+      <button class="back-to-top">Back to top</button>
+      <br><br>
 </script>
 
 </body>
