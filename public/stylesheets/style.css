@@ -345,8 +345,7 @@ padding: 5px;
 }
 
 li {
-font-size: 10px;
-padding: 5px;
+padding: 3px;
 display: block;
 }
 
@@ -484,6 +483,10 @@ padding: 10px;
 
 .skinny-hr{
   max-width: 86%;
+}
+
+.cabbage-kid{
+  height: 65px;
 }
 
 
