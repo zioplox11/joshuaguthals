@@ -12,6 +12,7 @@ var AboutMeView = Backbone.View.extend({
     "click .about-me" : "renderCollectionView",
     "mouseover .cabbage": 'showDescription',
     "mouseout .photos": 'hideDescription',
+    "click .back-to-top": 'backToTop'
   },
 
   renderAboutMeView: function(){
@@ -28,7 +29,7 @@ var AboutMeView = Backbone.View.extend({
   },
 
   showDescription: function(event){
-    $(event.target).css("border", "1px solid rgba(54,  54,  180,.6)").fadeIn(200);
+    $(event.target).css("border", "1px solid rgba(185, 25,  23  ,.4)").fadeIn(200);
     $(event.target).siblings('.cabbage-kid').children().fadeIn(600);
   },
 

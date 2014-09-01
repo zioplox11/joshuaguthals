@@ -284,7 +284,9 @@ mischka_photo3 = Photo.create(image_url: '../images/images_1x_2x/friends_family/
 
 mischka_photo4 = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka_right_close.jpg', description: 'Mischka is smooshed.', name: 'Mischka right up close')
 
-mischka.photos << mischka_photo4 << mischka_photo3
+mischka_photo5 = Photo.create(image_url: '../images/images_1x_2x/friends_family/mischka_at_bat.jpg', description: 'Mischka loves to bat at just about anything that suggests string.', name: 'Mischka at bat')
+
+mischka.photos << mischka_photo4 << mischka_photo5
 
 
 
