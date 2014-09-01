@@ -31,7 +31,7 @@
 
   <h1 id='hOpener'>Joshua Aaron Guthals</h1>
   <div id="pOpener">web developer & creative soul</div><br>
-  <h5><span id='contactinfo'><a href="mailto:joshua.guthals@gmail.com" style="text-decoration: none">Email | </a><a href='https://github.com/zioplox11' target="_blank">GitHub | </a><a href="https://www.linkedin.com/in/jguthals" target="_blank">LinkedIn</a></span>
+  <h5><span id='contactinfo'><a href='https://github.com/zioplox11' target="_blank">GitHub | </a><a href="https://www.linkedin.com/in/jguthals" target="_blank">LinkedIn | </a><a href="Joshua Guthals Resume.pdf" target="_blank">Resume</a> </span>
   </h5>
 
 </div>
@@ -42,7 +42,6 @@
     <li class="portfolio clicks" style="text-decoration: none"><a href="#portfolio" class="colorClick portfolioHref">portfolio</a></li>
      <li class="about-me clicks" style="text-decoration: none"><a href="#aboutMe" class="colorClick aboutHref">about me</a></li>
       <li class="photography clicks" style="text-decoration: none"><a href="#photography" class="colorClick photosHref">photography</a></li>
-      <li class="resume clicks" style="text-decoration: none"><a href="Joshua Guthals Resume.pdf" target="_blank" class="colorClick resumeHref">resume</a></li>
   </ul>
   </h3>
 </div>
@@ -52,33 +51,19 @@
 
 
 <script id="viewPortfolio" type="text/template">
-    <hr class='skinny-hr'>
-    </br>
-  <div id="portfolio">
-    <h2 id="portfolio">Web Projects</h2>
-    <p>Over the past six months I have begun building web applications. 'Prowl' is a social networking app for LGBTQ women, 'MyBoro' is a one-stop spot to gather current information about your current location in NYC, and 'My Best Coffee' is a place where coffee lovers can expand their knowledge and coffee-making skills. 'Prowl' is a collaborative effort with Rob and Atanas, MyBoro is a group project with Jon, Carolyn, and Mike. 'AudioAvator' which creates a colorful animation out of your favorite song, was recently completed at a Music Visualization Hackathon at Etsy Labs, and was a collaboration with Rob, Carolyn, Megan, and Cat. 'Hangman Is Fun' is a quick little game I built to allow you to enjoy hangman on your own! 'Triangle App' solves a coding challenge that I found online.</p>
-    <div id='web-projects-nav'>
-      <h3>
-      <ul class='nav-list'>
-        <li class="prowl clicks" style="text-decoration: none"><a href="#prowl" class="colorClick photographyHref">Prowl</a></li>
-        <li class="my-boro clicks" style="text-decoration: none"><a href="#myBoro" class="colorClick kravMagaHref">MyBoro</a></li>
-        <li class="my-best-coffee clicks" style="text-decoration: none"><a href="#myBestCoffee" class="colorClick songWritingHref">My Best Coffee</a></li>
-        <li class="audio-avatar clicks" style="text-decoration: none"><a href="#audioAvatar" class="colorClick sportsHref">AudioAvatar</a></li>
-        <li class="hangman-is-fun clicks" style="text-decoration: none"><a href="#hangmanIsFun" class="colorClick sportsHref">Hangman Is Fun</a></li>
-        <li class="triangle-app clicks" style="text-decoration: none"><a href="#triangleapp" class="colorClick sportsHref">Triangle App</a></li>
-      </ul>
-      </h3>
-    </div>
-    <hr class='skinny-hr'>
-    <a href="http://i.imgur.com/dCvtlbp.png" target="_blank"><img src="http://i.imgur.com/dCvtlbp.png" title="Styrofoam" alt="Styrofoam" style="border: none;"></a>
-    <p id="p2">Styrofoam, shadows, and painted lines in Clinton Hill</p>
+<hr class='skinny-hr'>
+</br>
 
-    <button><a href="#portfolios">Back To Top</a></button>
-    <button><a href="#favouriteThings">Onward to Favourite Things!</a></button>
-    <button><a href="index">Back to Main Page!</a></button>
-    </br></br>
-    <hr class='skinny-hr'>
-  </div>
+<div class="colorTime">
+
+    <div class='allPortfolios'><div class='protector'>
+    <p class='p3'>Projects</p></br></br></div>
+
+    </div>
+    <div class="allPortfolioCollection"></div>
+
+    </div>
+
 </script>
 
 
@@ -90,8 +75,7 @@
 <div class="colorTime">
 
     <div class='allAboutMes'><div class='protector'>
-    <h2 class='tbaa'>My New York City family</h2></br>
-    <p class='p3'>I have a slightly non-traditional, very modern family. Please meet my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. </p></br></br></div>
+    <p class='p3'>I live in Brooklyn, where I work as a software engineer and tend to my beard. When not coding, I am probably eating something either very healthy or horribly unhealthy, taking iPhone photos, or biking around the city. I might also be in Fort Collins visiting my sister or in Montana spending time with my parents. <br><br>I have a slightly non-traditional, very modern NYC family. Please meet my cat Mischka, my boyfriend Atanas, my biological sons Reuben and Micah who live with their two moms, and my friends Andrew, Lani, and Leah -- and our recently deceased betta fish Barnaby. </p></br></br></div>
 
     </div>
     <div class="allAboutMeCollection"></div>
@@ -128,6 +112,65 @@
 
 
 </script>
+
+<script id="view_portfolio" type="text/template">
+
+      <br>
+      <% for (var i = 0; i < portfolios_length; i++ ) { %>
+
+
+      <h2 class="tbaa"><a href=<%= portfolios[i].project_url %> target="_blank"><%= portfolios[i].name %></a></h2>
+      <p class='p3'><br><%= portfolios[i].description %></p><br><br>
+
+
+          <% for (var z = 0; z < portfolios[i].photo_length; z++ ) { %>
+          <div class='contain-me-portfolio'>
+              <img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>><br>
+              <div class='photo-descr-kid'><p class='p2' style="display:none;"><%= portfolios[i].photos[z].photo_des %></p><br><br><br><br></div>
+          </div>
+          <% } %>
+
+          <p class='p3'><br><%= portfolios[i].key_dev_element %></p>
+
+
+          <% for (var g = 0; g < portfolios[i].key_design_element_length; g++ ) { %>
+          <div class='contain-me'>
+              <div><p>
+
+              <% if (portfolios[i].key_design_elements[g].key_design_element_url) { %>
+             <a href=<%= portfolios[i].key_design_elements[g].key_design_element_url %> target="_blank">
+              <%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
+              </a>
+              <% } else { %>
+              <%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
+              <% } %>
+
+              <% if (portfolios[i].key_design_elements[g].key_design_element_descr) { %>
+              <%= portfolios[i].key_design_elements[g].key_design_element_des %></p>
+              <% } %>
+
+
+              <br><br><br><br></div>
+
+          </div>
+          <% } %>
+
+          </div>
+
+
+          <hr class='wide-hr'>
+          <br>
+
+
+      <% } %>
+
+            <br><br>
+      <button class="back-to-top">Back to top</button>
+      <br><br>
+
+
+</script>
+
 
 
 <script id="view_photos" type="text/template">

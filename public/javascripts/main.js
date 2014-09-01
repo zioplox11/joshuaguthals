@@ -1,6 +1,5 @@
 var router;
 var hobbiesView, hobbies;
-var favouriteThingsView, favouriteThings;
 var aboutMeView, aboutMe;
 var portfolioView, portfolio;
 
@@ -10,8 +9,6 @@ var AppRouter = Backbone.Router.extend({
     router = this;
     hobbies = new Hobbies();
     hobbiesView = new HobbiesView({model: hobbies, el: $('#main-profile')});
-    favouriteThings = new FavouriteThings();
-    favouriteThingsView = new FavouriteThingsView({model: favouriteThings, el: $('#main-profile')});
     aboutMe = new AboutMe();
     aboutMeView = new AboutMeView({model: aboutMe, el: $('#main-profile')});
     portfolio = new Portfolio();
@@ -19,16 +16,9 @@ var AppRouter = Backbone.Router.extend({
   },
 
   routes: {
-    "hobbies"              : "myHobbies",
-    "aboutMe"              :   "myAboutMe",
+    "aboutMe"           :   "myAboutMe",
     "portfolio"           :   "myPorfolio",
-    "favouriteThings"  : "myFavouriteThings",
-    "photography"     : "hobbyPhotography",
-    "sports"     : "hobbySports",
-    "kravmaga"     : "hobbyKrav",
-    "hivplanning"     : "hobbyHIVPrevention",
-    "beard"     : "hobbyBeard",
-    "songwriting"     : "hobbySongs",
+    "photography"    : "hobbyPhotography"
   },
 
   prepareNewView: function(heading, href){
@@ -40,41 +30,14 @@ var AppRouter = Backbone.Router.extend({
     thisHref.css('color', 'rgba(210,60,90,0.8)');
   },
 
-  myHobbies: function(){
-    var myHeading = $('.hobbies');
-    var myHref = $('.hobbyHref');
-    router.prepareNewView(myHeading, myHref);
-    hobbiesView.renderHobbiesView();
-  },
-
-  hobbyPhotography: function(){
-    hobbiesView.renderPhotosView();
-  },
-
-  hobbySongs: function(){
-    hobbiesView.renderSongWritingView();
-  },
-
-  hobbyBeard: function(){
-    hobbiesView.renderBeardView();
-  },
-
-  hobbyHIVPrevention: function(){
-    hobbiesView.renderHIVPlanningView();
-  },
-
-  hobbyKrav: function(){
-    hobbiesView.renderKravMagaView();
-  },
-
-  hobbySports: function(){
-    hobbiesView.renderSportsView();
-  },
-
   clearClicks: function(){
     $('a.colorClick').css('color','rgba(101,101,108,1');
     $('.clicks').css('text-decoration', 'none');
     $('.clicks').css('font-size', '13px');
+  },
+
+  hobbyPhotography: function(){
+    hobbiesView.renderPhotosView();
   },
 
   myAboutMe: function() {
@@ -88,14 +51,7 @@ var AppRouter = Backbone.Router.extend({
     var myHeading = $('.portfolio');
     var myHref = $('.portfolioHref');
     router.prepareNewView(myHeading, myHref);
-    portfolioView.renderPortfolioView();
-  },
-
-  myFavouriteThings: function() {
-    var myHeading = $('.favourite-things');
-    var myHref = $('.faveHref');
-    router.prepareNewView(myHeading, myHref);
-    favouriteThingsView.renderFavouriteThingsView();
+    portfolioView.renderCollectionView();
   }
 
 });

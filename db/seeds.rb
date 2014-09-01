@@ -178,12 +178,88 @@ photos.photos << newyork
 photos.photos << blade_runner
 
 
+KeyDesignElement.delete_all
+
+design_tool1 = KeyDesignElement.create(name: 'Backbone.js', dev_tool_url: 'http://backbonejs.org/', description: 'Backbone.js gives structure to web applications by providing models, collections, and views -- all connected to your existing API over a RESTful JSON interface.')
+
+design_tool2 = KeyDesignElement.create(name: 'User Interviews', description:'An emphasis at General Assembly was for us to engage end-users via user stories. Scheduling interviews with target audiences can yield pertinent information that can be used to create new tickets in Pivotal.')
+
+design_tool3 = KeyDesignElement.create(name: 'Front-end design team', description: 'In order to create an application with good use potential, the look and feel of the site is critically important. I work with professional designers whenever possible to improve site layouts.')
+
+design_tool4 = KeyDesignElement.create(name: 'UX')
+
+design_tool5 = KeyDesignElement.create(name: 'Web Audio API', dev_tool_url: 'http://webaudio.github.io/web-audio-api/', description: 'A high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to define the overall audio rendering.')
+
+design_tool6 = KeyDesignElement.create(name: 'jQuery', dev_tool_url: 'http://api.jquery.com/', description: 'jQuery is a feature-rich JavaScript library used for HTML document traversal and manipulation, event handling, animation, and Ajax.')
+
+design_tool7 = KeyDesignElement.create(name: 'Public APIs', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.', dev_tool_url: 'http://api.jquery.com/',)
+
+design_tool8 = KeyDesignElement.create(name: 'Ruby on Rails', dev_tool_url: 'http://guides.rubyonrails.org/', description: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
+
+design_tool9 = KeyDesignElement.create(name: 'JavaScript', dev_tool_url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', description: 'JavaScript® (often shortened to JS) is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.')
+
 
 WebProject.delete_all
 
-webproject1 = WebProject.create(name: 'Prowl', description: 'A lesbian dating, sex, friendship, and social networking app. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- we are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ')
+prowl = WebProject.create(name: 'Prowl', description: 'A dating, sex, friendship, and social networking app for LGBTQ women. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- my teammates and I are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ', project_url: 'http://prowl-dev.herokuapp.com/', key_dev_element: 'Backbone')
 
-webproject1.photos << prowl_photo
+
+prowl_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_landing.jpg', description: 'Prowl\'s landing page', name: 'Prowl Landing')
+
+prowl_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_profile_page.jpg', description: 'A view of a sample profile.', name: 'Prowl Profile page')
+
+prowl_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_local_users.jpg', description: 'A view of local users.', name: 'Prowl Users')
+
+prowl.photos << prowl_photo1 << prowl_photo2 << prowl_photo3
+
+prowl.key_design_elements << design_tool8 << design_tool9
+
+
+
+my_boro = WebProject.create(name: 'MyBoro', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://my-boro-dev.herokuapp.com/', key_dev_element: 'Public APIs')
+
+
+my_boro_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-landing.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
+
+my_boro_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
+
+my_boro_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-results.jpg', description: 'MyBoro sample results', name: 'MyBoro Results')
+
+my_boro.photos << my_boro_photo1 << my_boro_photo2 << my_boro_photo3
+
+my_boro.key_design_elements << design_tool7 << design_tool6 << design_tool3
+
+
+
+triangle_app = WebProject.create(name: 'TriangleApp', description: 'I stumbled upon a coding challenge asking me to take any triangle (composed of integers) and traverse it row by row to create the largest total sum of numbers. A constraint was that the next number has to come either directly below and to the left or directly below and to the right of the current number. I enjoyed the project enough that I built out an application that could solve and visual present the solution for any triangle with similar structure of the challenge triangle (new-line delimited rows with correct number of space delimited integers in each row).', project_url: 'http://triangle-app.herokuapp.com/', key_dev_element: 'DOM traversal')
+
+
+triangle_app_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_interface.jpg', description: 'TriangleApp landing page', name: 'TriangleApp Landing')
+
+triangle_app_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_answers.jpg', description: 'TriangleApp result page for original code challenge (a 100 row triangle).', name: 'TriangleApp sample result')
+
+triangle_app.photos << triangle_app_photo1
+
+triangle_app.key_design_elements << design_tool8 << design_tool9
+
+
+
+hangman = WebProject.create(name: 'Hangman Is Fun', description: 'This was a quick project at General Assembly, to help us get our feet wet in JavaScript. I have always liked hangman, so I thought it would fun to work with the input of a designer to make this one-page app look retro and playful.', project_url: 'http://hangman-is-fun.herokuapp.com/', key_dev_element: 'JavaScript')
+
+
+hangman_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/hangman_newgame.jpg', description: 'Hangman Is Fun landing page', name: 'TriangleApp Landing')
+
+hangman_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/hangman_answers.jpg', description: 'View of a game in progress.', name: 'TriangleApp sample result')
+
+hangman.photos << hangman_photo1
+
+hangman.key_design_elements << design_tool3 << design_tool9
+
+
+
+
+
+
 
 AboutMe.delete_all
 

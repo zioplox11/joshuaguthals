@@ -29,7 +29,7 @@ var AboutMeView = Backbone.View.extend({
   },
 
   showDescription: function(event){
-    $(event.target).css("border", "1px solid rgba(247, 62  ,70    ,.6)").fadeIn(200);
+    $(event.target).css("border", "1px solid rgba(51, 16 , 169, .5  )").fadeIn(200);
     $(event.target).siblings('.photo-descr-kid').children().fadeIn(600);
   },
 

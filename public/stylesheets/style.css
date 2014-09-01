@@ -246,6 +246,13 @@ p {
   width: 390px;
 }
 
+.contain-me-portfolio{
+  display: block;
+  vertical-align: top;
+  background-position: center;
+  width: 1060px;
+}
+
 .back-to-top{
   cursor: pointer;
   background-color: rgba(90, 111 ,186   ,1);
@@ -262,7 +269,7 @@ p {
 }
 
 .photos {
-  cursor: help;
+  cursor: cell;
   font-size: 12px;
   border: 1px solid rgba(127,  98,  124, .1 );
   font-weight: normal;
@@ -272,6 +279,19 @@ p {
   padding: 0;
   margin: 0 auto;
   display: inline-block;
+}
+
+.photos-portfolio {
+  cursor: cell;
+  font-size: 12px;
+  border: 1px solid rgba(127,  98,  124, .1 );
+  font-weight: normal;
+  width: 1002 px;
+  height: 602px;
+  max-width: 1002px;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 .skinny-hr{
@@ -353,7 +373,7 @@ display: block;
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
 html,
 body {

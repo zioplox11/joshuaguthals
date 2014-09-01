@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609165748) do
+ActiveRecord::Schema.define(version: 20140901192146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,22 @@ ActiveRecord::Schema.define(version: 20140609165748) do
   add_index "hobbies_photos", ["hobby_id"], name: "index_hobbies_photos_on_hobby_id", using: :btree
   add_index "hobbies_photos", ["photo_id"], name: "index_hobbies_photos_on_photo_id", using: :btree
 
+  create_table "key_design_elements", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "dev_tool_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "key_design_elements_web_projects", id: false, force: true do |t|
+    t.integer "web_project_id",        null: false
+    t.integer "key_design_element_id", null: false
+  end
+
+  add_index "key_design_elements_web_projects", ["key_design_element_id"], name: "index_key_design_elements_web_projects_on_key_design_element_id", using: :btree
+  add_index "key_design_elements_web_projects", ["web_project_id"], name: "index_key_design_elements_web_projects_on_web_project_id", using: :btree
+
   create_table "photos", force: true do |t|
     t.string   "name"
     t.text     "description"
@@ -81,6 +97,8 @@ ActiveRecord::Schema.define(version: 20140609165748) do
   create_table "web_projects", force: true do |t|
     t.string   "name"
     t.text     "description"
+    t.string   "project_url"
+    t.string   "key_dev_element"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

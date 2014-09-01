@@ -15,26 +15,14 @@ var HobbiesView = Backbone.View.extend({
   },
 
   events: {
-    // "click .photography" : "displayHobby",
     "click .photography": "renderPhotosView",
     "mouseover .photo-descr": 'showDescription',
     "mouseout .photos": 'hideDescription',
     "click .back-to-top": 'backToTop',
-    // "click .krav-maga" : "renderKravMagaView",
-    // "click .song-writing" : "renderSongWritingView",
-    // "click .sports" : "renderSportsView",
-    // "click .beard" : "renderBeardView",
-    // "click .hiv-prevention" : "renderHIVPlanningView",
   },
 
-  // renderHobbiesView: function(){
-  //   var strangeTemplateGlitch =  _.template($("#viewHobbies").html());
-  //   this.$el.empty();
-  //   this.$el.html(strangeTemplateGlitch(this.model.toJSON()));
-  // },
 
   showDescription: function(event){
-    $(event.target).css("border", "15px solid green").fadeIn(200);
     $(event.target).siblings('.photo-descr-kid').children().fadeIn(600);
   },
 
@@ -47,6 +35,13 @@ var HobbiesView = Backbone.View.extend({
     $('html, body').animate({
           scrollTop: $("#hOpener").offset().top
         }, 1400);
+  },
+
+  renderPhotosView: function(){
+    var photos = 'photography';
+    this.clearClicks(photos);
+    $('#main-profile').children().hide();
+    this.displayHobby(photos);
   },
 
   displayHobby: function(finder){
@@ -64,43 +59,6 @@ var HobbiesView = Backbone.View.extend({
         that.backToTop();
     });
   },
-
-  // renderSportsView: function(){
-  //   var sports = 'sports';
-  //   this.clearClicks(sports);
-  //   this.displayHobby(sports);
-  // },
-
-  // renderBeardView: function(){
-  //   var beard = 'beard';
-  //   this.clearClicks(beard);
-  //   this.displayHobby(beard);
-  // },
-
-  // renderHIVPlanningView: function(){
-  //   var hIVPlanning = 'hivplanning';
-  //   this.clearClicks(hIVPlanning);
-  //   this.displayHobby(hIVPlanning);
-  // },
-
-  renderPhotosView: function(){
-    var photos = 'photography';
-    this.clearClicks(photos);
-    $('#main-profile').children().hide();
-    this.displayHobby(photos);
-  },
-
-  // renderKravMagaView: function(){
-  //   var krav = 'kravmaga';
-  //   this.clearClicks(krav);
-  //   this.displayHobby(krav);
-  // },
-
-  // renderSongWritingView: function(){
-  //   var songs = 'songs';
-  //   this.clearClicks(songs);
-  //   this.displayHobby(songs);
-  // },
 
   clearClicks: function(finder){
     if (finder === 'kravmaga'){
