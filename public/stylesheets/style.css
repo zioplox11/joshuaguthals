@@ -262,6 +262,7 @@ p {
 }
 
 .photos {
+  cursor: help;
   font-size: 12px;
   border: 1px solid rgba(127,  98,  124, .1 );
   font-weight: normal;
@@ -281,8 +282,8 @@ p {
   max-width: 80%;
 }
 
-.cabbage-kid{
-  height: 50px;
+.photo-descr-kid{
+  height: 62px;
 }
 
 .p2 {
@@ -484,10 +485,5 @@ padding: 10px;
 .skinny-hr{
   max-width: 86%;
 }
-
-.cabbage-kid{
-  height: 65px;
-}
-
 
 }
