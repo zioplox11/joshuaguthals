@@ -273,6 +273,14 @@ p {
   display: inline-block;
 }
 
+.skinny-hr{
+  width: 462px;
+}
+
+.wide-hr{
+  max-width: 80%;
+}
+
 .cabbage-kid{
   height: 50px;
 }
@@ -399,6 +407,9 @@ padding: 10px;
 }
 
 
+.skinny-hr{
+  max-width: 362px;
+}
 
 }
 
@@ -463,6 +474,11 @@ body {
 article, #hobbies, #about-me, #favourite-things, #portfolio {
 max-width: 296px;
 padding: 10px;
+}
+
+
+.skinny-hr{
+  max-width: 222px;
 }
 
 
