@@ -54,11 +54,10 @@
 <hr class='skinny-hr'>
 </br>
 
-<div class="colorTime">
+<div class="colorTime2">
 
-    <div class='allPortfolios'><div class='protector'>
-    <p class='p3'>Projects</p></br></br></div>
-
+    <div class='allPortfolios'><div class='protector'><h2 class="tbaa">Web Projects</h2><br>
+      <p class='p3'>Projects oh so many many many projects</p></br></br></div>
     </div>
     <div class="allPortfolioCollection"></div>
 
@@ -114,56 +113,45 @@
 </script>
 
 <script id="view_portfolio" type="text/template">
+<br>
 
-      <br>
       <% for (var i = 0; i < portfolios_length; i++ ) { %>
-
 
       <h2 class="tbaa"><a href=<%= portfolios[i].project_url %> target="_blank"><%= portfolios[i].name %></a></h2>
       <p class='p3'><br><%= portfolios[i].description %></p><br><br>
 
-
-          <% for (var z = 0; z < portfolios[i].photo_length; z++ ) { %>
-          <div class='contain-me-portfolio'>
-              <img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>><br>
-              <div class='photo-descr-kid'><p class='p2' style="display:none;"><%= portfolios[i].photos[z].photo_des %></p><br><br><br><br></div>
-          </div>
+            <div class='contain-me-portfolio-photos'>
+          <% for (var z = 0; z < 2; z++ ) { %>
+              <img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>>
           <% } %>
+          </div>
 
-          <p class='p3'><br><%= portfolios[i].key_dev_element %></p>
-
+          <p><br><%= portfolios[i].key_dev_element %></p>
 
           <% for (var g = 0; g < portfolios[i].key_design_element_length; g++ ) { %>
-          <div class='contain-me'>
-              <div><p>
 
               <% if (portfolios[i].key_design_elements[g].key_design_element_url) { %>
-             <a href=<%= portfolios[i].key_design_elements[g].key_design_element_url %> target="_blank">
-              <%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
+             <a class='in-a-line' href=<%= portfolios[i].key_design_elements[g].key_design_element_url %> target="_blank">
+              <%= portfolios[i].key_design_elements[g].key_design_element_name %>
               </a>
               <% } else { %>
-              <%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
+              <p class='in-a-line'><%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
               <% } %>
 
-              <% if (portfolios[i].key_design_elements[g].key_design_element_descr) { %>
-              <%= portfolios[i].key_design_elements[g].key_design_element_des %></p>
+              <% if (portfolios[i].key_design_elements[g].key_design_element_des) { %>
+              <p><%= portfolios[i].key_design_elements[g].key_design_element_des %></p>
               <% } %>
 
 
-              <br><br><br><br></div>
+              <br><br><br><br>
 
-          </div>
           <% } %>
-
-          </div>
-
 
           <hr class='wide-hr'>
           <br>
 
-
       <% } %>
-
+<div>
             <br><br>
       <button class="back-to-top">Back to top</button>
       <br><br>

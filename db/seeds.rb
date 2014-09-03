@@ -204,7 +204,7 @@ WebProject.delete_all
 prowl = WebProject.create(name: 'Prowl', description: 'A dating, sex, friendship, and social networking app for LGBTQ women. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- my teammates and I are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ', project_url: 'http://prowl-dev.herokuapp.com/', key_dev_element: 'Backbone')
 
 
-prowl_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_landing.jpg', description: 'Prowl\'s landing page', name: 'Prowl Landing')
+prowl_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_main_landing.jpg', description: 'Prowl\'s landing page', name: 'Prowl Landing')
 
 prowl_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_profile_page.jpg', description: 'A view of a sample profile.', name: 'Prowl Profile page')
 
@@ -238,7 +238,7 @@ triangle_app_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_
 
 triangle_app_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_answers.jpg', description: 'TriangleApp result page for original code challenge (a 100 row triangle).', name: 'TriangleApp sample result')
 
-triangle_app.photos << triangle_app_photo1
+triangle_app.photos << triangle_app_photo1 << triangle_app_photo2
 
 triangle_app.key_design_elements << design_tool8 << design_tool9
 
@@ -251,7 +251,7 @@ hangman_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_still
 
 hangman_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/hangman_answers.jpg', description: 'View of a game in progress.', name: 'TriangleApp sample result')
 
-hangman.photos << hangman_photo1
+hangman.photos << hangman_photo1 << hangman_photo2
 
 hangman.key_design_elements << design_tool3 << design_tool9
 

@@ -97,7 +97,6 @@ body {
   img{
     border-radius: 2px;
     max-width: 100%;
-    display: inline;
   }
 
 #hobby-block{
@@ -141,13 +140,21 @@ body {
   position: relative;
   display: inline;
   height: 80px;
-  width: 496px;
+  width: 1200px;
   margin: 0 auto;
 /*  border: 1px solid blue;*/
 }
 
 .colorTime{
   background-color: rgba(109 ,189, 217, .08 );
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.colorTime2{
+  background-color: rgba(247,  37,  87, .03  );
   max-width: 1400px;
   position: relative;
   margin: 0 auto;
@@ -170,8 +177,17 @@ filter:alpha(opacity=55);
     filter:alpha(opacity=1); /* For IE8 and earlier */
 }
 
-article, #hobbies, #about-me, #favourite-things, #portfolio {
+article, #hobbies, #about-me, #favourite-things {
 max-width: 496px;
+padding: 10px;
+margin: 0 auto;
+position: relative;
+text-align: center;
+}
+
+
+#portfolio {
+max-width: 1400px;
 padding: 10px;
 margin: 0 auto;
 position: relative;
@@ -247,10 +263,40 @@ p {
 }
 
 .contain-me-portfolio{
-  display: block;
   vertical-align: top;
   background-position: center;
-  width: 1060px;
+  max-width: 90%;
+  position: relative;
+}
+
+.contain-me-portfolio-photos{
+  vertical-align: top;
+  max-width: 1400px;
+  position: relative;
+}
+
+.contain-me-portfolio-photo{
+  vertical-align: top;
+  max-width: 510px;
+  height: 462px;
+  position: relative;
+  display: inline;
+}
+
+.in-a-line {
+  display: inline-block;
+}
+
+.photos-portfolio {
+  cursor: cell;
+  font-size: 12px;
+  border: 1px solid rgba(127,  98,  124, .1 );
+  font-weight: normal;
+  width: 502px;
+  height: 302px;
+  max-width: 502px;
+  padding: 0;
+  margin: 10px;
 }
 
 .back-to-top{
@@ -281,18 +327,6 @@ p {
   display: inline-block;
 }
 
-.photos-portfolio {
-  cursor: cell;
-  font-size: 12px;
-  border: 1px solid rgba(127,  98,  124, .1 );
-  font-weight: normal;
-  width: 1002 px;
-  height: 602px;
-  max-width: 1002px;
-  padding: 0;
-  margin: 0 auto;
-  display: block;
-}
 
 .skinny-hr{
   max-width: 33%;
@@ -304,6 +338,10 @@ p {
 
 .photo-descr-kid{
   height: 62px;
+}
+
+.photo-descr-kidz{
+  display: inline;
 }
 
 .p2 {
@@ -473,7 +511,7 @@ body {
   width: 272px;
   height: 272px;
   max-width: 272px;
-  display: block;
+  display: inline-block;
 }
 
 

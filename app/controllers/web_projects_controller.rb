@@ -25,7 +25,7 @@ class WebProjectsController < ApplicationController
     @portfolio = {
       name: portfolio.name,
       description: portfolio.description,
-      technologies_used: portfolio.key_dev_element,
+      key_dev_element: portfolio.key_dev_element,
       project_url: portfolio.project_url
     }
 
