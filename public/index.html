@@ -56,8 +56,8 @@
 
 <div class="colorTime2">
 
-    <div class='allPortfolios'><div class='protector'><h2 class="tbaa">Web Projects</h2><br>
-      <p class='p3'>Projects oh so many many many projects</p></br></br></div>
+    <div class='allPortfolios'><div class='protector'>
+      <p class='p3'>Most of the following web projects were collaborative efforts with my peers at General Assembly. The key  development tools that I focused are listed below each project.</p></br></br></div>
     </div>
     <div class="allPortfolioCollection"></div>
 
@@ -120,28 +120,28 @@
       <h2 class="tbaa"><a href=<%= portfolios[i].project_url %> target="_blank"><%= portfolios[i].name %></a></h2>
       <p class='p3'><br><%= portfolios[i].description %></p><br><br>
 
-            <div class='contain-me-portfolio-photos'>
+          <div class='contain-me-portfolio-photos'>
           <% for (var z = 0; z < 2; z++ ) { %>
-              <img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>>
+              <a href=<%= portfolios[i].project_url %> target="_blank"><img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>></a>
           <% } %>
           </div>
 
-          <a class='in-a-line' href=<%= portfolios[i].key_dev_url %> target="_blank"><%= portfolios[i].key_dev_element %></a>
+          <% if (portfolios[i].key_dev_url) { %>
+            <p class='p3 photo-descr-kid'><a href=<%= portfolios[i].key_dev_url %> target="_blank"><%= portfolios[i].key_dev_element %></a>: <%= portfolios[i].key_dev_desc %></p>
+          <% } else { %>
+            <p class='p3'><%= portfolios[i].key_dev_element %></a>: <%= portfolios[i].key_dev_desc %></p>
+          <% } %>
 
-          <p class='p3'><%= portfolios[i].key_dev_desc %></p>
 
           <% for (var g = 0; g < portfolios[i].key_design_element_length; g++ ) { %>
 
               <% if (portfolios[i].key_design_elements[g].key_design_element_url) { %>
-             <a class='in-a-line' href=<%= portfolios[i].key_design_elements[g].key_design_element_url %> target="_blank">
+                  <a class='p3' href=<%= portfolios[i].key_design_elements[g].key_design_element_url %> target="_blank">
               <%= portfolios[i].key_design_elements[g].key_design_element_name %>
               </a>
               <% } else { %>
-              <p class='in-a-line'><%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
+                <p class='p3'><%= portfolios[i].key_design_elements[g].key_design_element_name %></p>
               <% } %>
-
-
-              <br><br><br><br>
 
           <% } %>
 
