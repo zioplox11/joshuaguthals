@@ -192,7 +192,7 @@ design_tool5 = KeyDesignElement.create(name: 'Web Audio API', dev_tool_url: 'htt
 
 design_tool6 = KeyDesignElement.create(name: 'jQuery', dev_tool_url: 'http://api.jquery.com/', description: 'jQuery is a feature-rich JavaScript library used for HTML document traversal and manipulation, event handling, animation, and Ajax.')
 
-design_tool7 = KeyDesignElement.create(name: 'APIs calls', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.')
+design_tool7 = KeyDesignElement.create(name: 'API calls', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.')
 
 design_tool8 = KeyDesignElement.create(name: 'Ruby on Rails', dev_tool_url: 'http://guides.rubyonrails.org/', description: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
 
