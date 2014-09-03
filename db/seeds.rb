@@ -192,11 +192,13 @@ design_tool5 = KeyDesignElement.create(name: 'Web Audio API', dev_tool_url: 'htt
 
 design_tool6 = KeyDesignElement.create(name: 'jQuery', dev_tool_url: 'http://api.jquery.com/', description: 'jQuery is a feature-rich JavaScript library used for HTML document traversal and manipulation, event handling, animation, and Ajax.')
 
-design_tool7 = KeyDesignElement.create(name: 'APIs calls', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.', dev_tool_url: 'http://api.jquery.com/',)
+design_tool7 = KeyDesignElement.create(name: 'APIs calls', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.')
 
 design_tool8 = KeyDesignElement.create(name: 'Ruby on Rails', dev_tool_url: 'http://guides.rubyonrails.org/', description: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
 
 design_tool9 = KeyDesignElement.create(name: 'JavaScript', dev_tool_url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', description: 'JavaScript® (often shortened to JS) is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.')
+
+design_tool10 = KeyDesignElement.create(name: 'DOM traversal')
 
 
 WebProject.delete_all
@@ -216,26 +218,26 @@ prowl.key_design_elements << design_tool8 << design_tool9
 
 
 
-my_boro = WebProject.create(name: 'MyBoro', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://my-boro-dev.herokuapp.com/', key_dev_element: 'Public APIs')
+my_boro = WebProject.create(name: 'MyBoro', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://my-boro-dev.herokuapp.com/', key_dev_element: 'API calls', key_dev_desc: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.')
 
 my_boro_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-landing.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
 
-my_boro_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
+my_boro_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
 
-my_boro_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-results.jpg', description: 'MyBoro sample results', name: 'MyBoro Results')
+my_boro_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-results.jpg', description: 'MyBoro sample results', name: 'MyBoro Results')
 
 my_boro.photos << my_boro_photo1 << my_boro_photo2 << my_boro_photo3
 
-my_boro.key_design_elements << design_tool7 << design_tool6 << design_tool3
+my_boro.key_design_elements << design_tool6 << design_tool3
 
 
 
 
 audio_avatar = WebProject.create(name: 'AudioAvatar', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://audioavatar-dev.herokuapp.com/', key_dev_element: 'Web Audio API', key_dev_url: 'http://webaudio.github.io/web-audio-api/', key_dev_desc: 'A high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to define the overall audio rendering.')
 
-audio_avatar_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-landing.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
+audio_avatar_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/audio_avatar_view4.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
 
-audio_avatar_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
+audio_avatar_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/audio_avatar_view3.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
 
 audio_avatar.photos << audio_avatar_photo1 << audio_avatar_photo2
 
@@ -245,7 +247,7 @@ audio_avatar.key_design_elements << design_tool7 << design_tool6
 
 
 
-triangle_app = WebProject.create(name: 'TriangleApp', description: 'I stumbled upon a coding challenge asking me to take any triangle (composed of integers) and traverse it row by row to create the largest total sum of numbers. A constraint was that the next number has to come either directly below and to the left or directly below and to the right of the current number. I enjoyed the project enough that I built out an application that could solve and visual present the solution for any triangle with similar structure of the challenge triangle (new-line delimited rows with correct number of space delimited integers in each row).', project_url: 'http://triangle-app.herokuapp.com/', key_dev_element: 'DOM traversal')
+triangle_app = WebProject.create(name: 'TriangleApp', description: 'I stumbled upon a coding challenge asking me to take any triangle (composed of integers) and traverse it row by row to create the largest total sum of numbers. A constraint was that the next number has to come either directly below and to the left or directly below and to the right of the current number. I enjoyed the project enough that I built out an application that could solve and visual present the solution for any triangle with similar structure of the challenge triangle (new-line delimited rows with correct number of space delimited integers in each row).', project_url: 'http://triangle-app.herokuapp.com/', key_dev_element: 'Ruby on Rails', key_dev_url: 'http://guides.rubyonrails.org/', key_dev_desc: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
 
 
 triangle_app_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_interface.jpg', description: 'TriangleApp landing page', name: 'TriangleApp Landing')
