@@ -26,6 +26,8 @@ class WebProjectsController < ApplicationController
       name: portfolio.name,
       description: portfolio.description,
       key_dev_element: portfolio.key_dev_element,
+      key_dev_url: portfolio.key_dev_url,
+      key_dev_desc: portfolio.key_dev_desc,
       project_url: portfolio.project_url
     }
 

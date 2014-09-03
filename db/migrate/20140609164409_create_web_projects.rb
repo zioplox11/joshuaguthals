@@ -5,6 +5,8 @@ class CreateWebProjects < ActiveRecord::Migration
       t.text :description
       t.string :project_url
       t.string :key_dev_element
+      t.string :key_dev_url
+      t.string :key_dev_desc
       t.timestamps
     end
   end

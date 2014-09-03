@@ -99,6 +99,8 @@ ActiveRecord::Schema.define(version: 20140901192146) do
     t.text     "description"
     t.string   "project_url"
     t.string   "key_dev_element"
+    t.string   "key_dev_url"
+    t.string   "key_dev_desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

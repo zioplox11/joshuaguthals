@@ -192,7 +192,7 @@ design_tool5 = KeyDesignElement.create(name: 'Web Audio API', dev_tool_url: 'htt
 
 design_tool6 = KeyDesignElement.create(name: 'jQuery', dev_tool_url: 'http://api.jquery.com/', description: 'jQuery is a feature-rich JavaScript library used for HTML document traversal and manipulation, event handling, animation, and Ajax.')
 
-design_tool7 = KeyDesignElement.create(name: 'Public APIs', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.', dev_tool_url: 'http://api.jquery.com/',)
+design_tool7 = KeyDesignElement.create(name: 'APIs calls', description: 'As the movement toward a more programmable web continues, it is increasingly important to be comfortable making API calls to other servers to expand meaningful web content.', dev_tool_url: 'http://api.jquery.com/',)
 
 design_tool8 = KeyDesignElement.create(name: 'Ruby on Rails', dev_tool_url: 'http://guides.rubyonrails.org/', description: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
 
@@ -201,7 +201,7 @@ design_tool9 = KeyDesignElement.create(name: 'JavaScript', dev_tool_url: 'https:
 
 WebProject.delete_all
 
-prowl = WebProject.create(name: 'Prowl', description: 'A dating, sex, friendship, and social networking app for LGBTQ women. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- my teammates and I are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ', project_url: 'http://prowl-dev.herokuapp.com/', key_dev_element: 'Backbone')
+prowl = WebProject.create(name: 'Prowl', description: 'A dating, sex, friendship, and social networking app for LGBTQ women. Using real world user stories -- from interviews with a single woman in her twenties, a married couple with children, and a partnered couple expecting children -- my teammates and I are in the process of creating a space for LGBTQ women to meet up and engage in social networking uniquely suited to their needs. ', project_url: 'http://prowl-dev.herokuapp.com/', key_dev_element: 'Backbone', key_dev_url: 'http://backbonejs.org/', key_dev_desc: 'Backbone.js gives structure to web applications by providing models, collections, and views -- all connected to your existing API over a RESTful JSON interface.')
 
 
 prowl_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/prowl_main_landing.jpg', description: 'Prowl\'s landing page', name: 'Prowl Landing')
@@ -218,7 +218,6 @@ prowl.key_design_elements << design_tool8 << design_tool9
 
 my_boro = WebProject.create(name: 'MyBoro', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://my-boro-dev.herokuapp.com/', key_dev_element: 'Public APIs')
 
-
 my_boro_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-landing.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
 
 my_boro_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
@@ -228,6 +227,21 @@ my_boro_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_still
 my_boro.photos << my_boro_photo1 << my_boro_photo2 << my_boro_photo3
 
 my_boro.key_design_elements << design_tool7 << design_tool6 << design_tool3
+
+
+
+
+audio_avatar = WebProject.create(name: 'AudioAvatar', description: 'MyBoro is a collaborative project that seeks to provide people easy access to helpful information in their immediate area. We culled together API calls to a half-dozen servers, including the subway, the weather, and local news. I was responsible for scraping Google Movies\' API also for building out our site\'s jQuery functionality and ajax.', project_url: 'http://audioavatar-dev.herokuapp.com/', key_dev_element: 'Web Audio API', key_dev_url: 'http://webaudio.github.io/web-audio-api/', key_dev_desc: 'A high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to define the overall audio rendering.')
+
+audio_avatar_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-landing.jpg', description: 'MyBoro landing page', name: 'MyBoro Landing')
+
+audio_avatar_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-options.jpg', description: 'MyBoro local options', name: 'MyBoro Options')
+
+audio_avatar.photos << audio_avatar_photo1 << audio_avatar_photo2
+
+audio_avatar.key_design_elements << design_tool7 << design_tool6
+
+
 
 
 
@@ -243,8 +257,7 @@ triangle_app.photos << triangle_app_photo1 << triangle_app_photo2
 triangle_app.key_design_elements << design_tool8 << design_tool9
 
 
-
-hangman = WebProject.create(name: 'Hangman Is Fun', description: 'This was a quick project at General Assembly, to help us get our feet wet in JavaScript. I have always liked hangman, so I thought it would fun to work with the input of a designer to make this one-page app look retro and playful.', project_url: 'http://hangman-is-fun.herokuapp.com/', key_dev_element: 'JavaScript')
+hangman = WebProject.create(name: 'Hangman Is Fun', description: 'This was a quick project at General Assembly, to help us get our feet wet in JavaScript. I have always liked hangman, so I thought it would fun to work with the input of a designer to make this one-page app look retro and playful.', project_url: 'http://hangman-is-fun.herokuapp.com/', key_dev_element: 'JavaScript', key_dev_url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', key_dev_desc: 'JavaScript (often shortened to JS) is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.' )
 
 
 hangman_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/hangman_newgame.jpg', description: 'Hangman Is Fun landing page', name: 'TriangleApp Landing')
