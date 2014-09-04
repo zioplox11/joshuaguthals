@@ -57,7 +57,7 @@
 <div class="colorTime2">
 
     <div class='allPortfolios'><div class='protector'>
-      <p class='p3'>Most of the following web projects were collaborative efforts with my peers at General Assembly. The key  development tools that I focused are listed below each project.</p></br></br></div>
+      <p class='p3'>Most of the following web projects listed below were collaborative efforts with my peers at General Assembly. AudioAvatar was the result of a music visualization hackathon at Esty and Hangman Is Fun was a quick project at General Assembly we were assigned to create for our first JavaScript-based app. Key web development tools are listed below each project.</p></br></br></div>
     </div>
     <div class="allPortfolioCollection"></div>
 
@@ -121,7 +121,7 @@
       <p class='p3'><br><%= portfolios[i].description %></p><br><br>
 
           <div class='contain-me-portfolio-photos'>
-          <% for (var z = 0; z < 2; z++ ) { %>
+          <% for (var z = 0; z < portfolios[i].photo_length; z++ ) { %>
               <a href=<%= portfolios[i].project_url %> target="_blank"><img class='photos-portfolio photo-descr' src=<%= portfolios[i].photos[z].photo %>></a>
           <% } %>
           </div>
