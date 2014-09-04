@@ -7,13 +7,14 @@ var AppRouter = Backbone.Router.extend({
     photosView = new HobbiesView({model: photography, el: $('#main-profile')});
     aboutMe = new AboutMe();
     aboutMeView = new AboutMeView({model: aboutMe, el: $('#main-profile')});
+    portfolio = new Portfolio();
+    portfolioView = new PortfolioView({model: aboutMe, el: $('#main-profile')});
   },
 
   routes: {
     "photography"              : "myPhotos",
     "aboutMe"              :   "myAboutMe",
-    "portfolio"           :   "myPorfolio",
-    "favouriteThings"  : "myFavouriteThings",
+    "portfolio"           :   "myPorfolio"
   },
 
   prepareNewView: function(heading, href){
@@ -47,6 +48,8 @@ var AppRouter = Backbone.Router.extend({
   },
 
   myPorfolio: function() {
+    router.prepareNewView(myHeading, myHref);
+    portfolio.renderCollectionView();
   }
 
 });

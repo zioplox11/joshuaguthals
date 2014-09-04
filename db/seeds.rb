@@ -226,7 +226,7 @@ my_boro_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_still
 
 my_boro_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/myboro-results.jpg', description: 'MyBoro sample results', name: 'MyBoro Results')
 
-my_boro.photos << my_boro_photo1 << my_boro_photo2 << my_boro_photo3
+my_boro.photos << my_boro_photo1 << my_boro_photo2
 
 my_boro.key_design_elements << design_tool6 << design_tool3
 
@@ -261,11 +261,11 @@ hangman.key_design_elements << design_tool3 << design_tool9
 triangle_app = WebProject.create(name: 'TriangleApp', description: 'I stumbled upon a coding challenge asking me to take any triangle (composed of integers) and traverse it row by row to create the largest total sum of numbers. A constraint was that the next number has to come either directly below and to the left or directly below and to the right of the current number. I enjoyed the project enough that I built out an application that could solve and visual present the solution for any triangle with similar structure of the challenge triangle (new-line delimited rows with correct number of space delimited integers in each row).', project_url: 'http://triangle-app.herokuapp.com/', key_dev_element: 'Ruby on Rails', key_dev_url: 'http://guides.rubyonrails.org/', key_dev_desc: 'Rails is a web application development framework written in the Ruby language. It is designed to allow you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.')
 
 
-triangle_app_photo1 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_interface.jpg', description: 'TriangleApp landing page', name: 'TriangleApp Landing')
+triangle_app_photo = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_interface.jpg', description: 'TriangleApp landing page', name: 'TriangleApp Landing')
 
-triangle_app_photo2 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_answers.jpg', description: 'TriangleApp result page for original code challenge (a 100 row triangle).', name: 'TriangleApp sample result')
+triangle_app_photo3 = Photo.create(image_url: '../images/images_1x_2x/portfolio_stills/triangle_answers.jpg', description: 'TriangleApp result page for original code challenge (a 100 row triangle).', name: 'TriangleApp sample result')
 
-triangle_app.photos << triangle_app_photo1 << triangle_app_photo2
+triangle_app.photos << triangle_app_photo3 << triangle_app_photo
 
 triangle_app.key_design_elements << design_tool6 << design_tool10
 

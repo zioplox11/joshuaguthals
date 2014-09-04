@@ -10,7 +10,7 @@ var PortfolioView = Backbone.View.extend({
   events: {
     "click .portfolio" : "renderCollectionView",
     "mouseover .photo-descr": 'showDescription',
-    "mouseout .photos": 'hideDescription',
+    "mouseout .photos-portfolio": 'hideDescription',
     "click .back-to-top": 'backToTop'
   },
 
