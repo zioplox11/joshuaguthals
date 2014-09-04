@@ -396,11 +396,20 @@ padding: 0px 4px 0px 4px;
 margin-right: 6px;
 }
 
-@media only screen and (max-width: 500px) {
+
+
+
+@media only screen and (max-width: 590px) {
 
 h1 {
 font-size: 30px;
 padding: 5px;
+}
+
+.p3 {
+  max-width: 75%;
+  width: 75%;
+  display: block;
 }
 
 li {
@@ -408,7 +417,92 @@ padding: 3px;
 display: block;
 }
 
+.photos-portfolio {
+  max-width: 312px;
+  height: 188px;
+  width: 312px;
 }
+
+}
+
+
+@media only screen and (max-width: 330px) {
+
+
+html,
+body {
+  max-width: 100%;
+}
+
+  .welcome-photo{
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+#hobby-block{
+  max-width: 100%;
+  position: relative;
+}
+
+
+.photos-portfolio {
+  width: 252px;
+  height: 152px;
+  max-width: 252px;
+}
+
+
+  #welcome{
+    width: 100%;
+  }
+
+  #hOpener{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+
+.photos {
+  width: 272px;
+  height: 272px;
+  max-width: 272px;
+  display: inline-block;
+}
+
+
+.contain-me{
+  display: block;
+  width: 300px;
+}
+
+
+.p2 {
+  width: 262px;
+  max-width: 262px;
+  display: block;
+}
+
+
+.p3 {
+  width: 300px;
+  max-width: 300px;
+  display: block;
+}
+
+
+article, #hobbies, #about-me, #favourite-things, #portfolio {
+max-width: 296px;
+padding: 10px;
+}
+
+.skinny-hr{
+  max-width: 86%;
+}
+
+}
+
+
 
 
 @media only screen and (max-width: 800px) {
@@ -450,15 +544,15 @@ body {
 }
 
 .p2 {
-  width: 300px;
-  max-width: 300px;
+  width: 296px;
+  max-width: 296px;
   display: inline-block;
 }
 
 
 .p3 {
-  width: 300px;
-  max-width: 300px;
+  width:  85%;
+  max-width: 85%;
   display: inline-block;
 }
 
@@ -474,74 +568,5 @@ padding: 10px;
 }
 
 
-
-}
-
-@media only screen and (max-width: 300px) {
-
-
-html,
-body {
-  max-width: 100%;
-}
-
-  .welcome-photo{
-    max-width: 90%;
-    max-height: 90%;
-  }
-
-#hobby-block{
-  max-width: 100%;
-  position: relative;
-}
-
-
-  #welcome{
-    width: 100%;
-  }
-
-  #hOpener{
-    margin: 0 auto;
-    padding: 0 auto;
-    margin-bottom: 15px;
-    font-size: 2em;
-  }
-
-.photos {
-  width: 272px;
-  height: 272px;
-  max-width: 272px;
-  display: inline-block;
-}
-
-
-.contain-me{
-  display: block;
-  width: 300px;
-}
-
-
-.p2 {
-  width: 272px;
-  max-width: 272px;
-  display: block;
-}
-
-
-.p3 {
-  width: 290px;
-  max-width: 290px;
-  display: block;
-}
-
-
-article, #hobbies, #about-me, #favourite-things, #portfolio {
-max-width: 296px;
-padding: 10px;
-}
-
-.skinny-hr{
-  max-width: 86%;
-}
 
 }
